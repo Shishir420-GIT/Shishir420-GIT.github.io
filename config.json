@@ -1,0 +1,215 @@
+{
+  "features": {
+    "about": true,
+    "projects": true,
+    "experience": true,
+    "skills": true,
+    "github_projects": true
+  },
+  "site": {
+    "title": "Shishir Srivastav - Full Stack Developer & Tech Content Creator",
+    "description": "Full Stack Developer, Tech Content Creator, and Cloud Enthusiast. Building innovative solutions and sharing knowledge through code.",
+    "seo": {
+      "title": "Shishir Srivastav - Full Stack Developer & Tech Content Creator",
+      "description": "Full Stack Developer specializing in modern web technologies, cloud solutions, and technical content creation. Passionate about building scalable applications and sharing knowledge.",
+      "keywords": "full stack developer, web development, cloud computing, tech content creator, javascript, react, node.js, aws, programming, software engineer",
+      "author": "Shishir Srivastav",
+      "og_image": "https://avatars.githubusercontent.com/Shishir420-GIT",
+      "twitter_card": "summary_large_image",
+      "base_url": "https://Shishir420-GIT.github.io/developer-portfolio"
+    }
+  },
+  "header": {
+    "greeting": "Shishir Srivastav",
+    "tagline": "Full Stack Developer & Tech Content Creator"
+  },
+  "social_links": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/Shishir420-GIT",
+      "icon": "github",
+      "required": true
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/shishir-srivastav",
+      "icon": "linkedin",
+      "required": true
+    },
+    {
+      "name": "Twitter",
+      "url": "https://x.com/shishir_who",
+      "icon": "twitter",
+      "required": false
+    },
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/channel/UCCZiCzPtg9pmDwChJ4ROIpA",
+      "icon": "youtube",
+      "required": false
+    },
+    {
+      "name": "Linktree",
+      "url": "https://linktr.ee/shishirsrivastav",
+      "icon": "website",
+      "required": false
+    }
+  ],
+  "github_username": "Shishir420-GIT",
+  "about": {
+    "paragraphs": [
+      "👋 Welcome! I'm Shishir, a passionate Full Stack Developer and Tech Content Creator with a love for building innovative digital solutions that make a real impact.",
+      "🚀 I specialize in modern web technologies, cloud architecture, and creating scalable applications. When I'm not coding, you'll find me sharing knowledge through technical content, tutorials, and engaging with the developer community.",
+      "💡 I believe in the power of technology to solve real-world problems and am always excited to collaborate on projects that push the boundaries of what's possible. Let's build something amazing together!"
+    ]
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "items": [
+      {
+        "name": "Modern Portfolio Website",
+        "date": "2025",
+        "description": [
+          "A fully responsive, modern portfolio website built with vanilla JavaScript and advanced CSS",
+          "Features dark/light mode toggle, smooth animations, and dynamic content loading",
+          "Optimized for performance with lazy loading, SEO optimization, and accessibility features",
+          "Configurable through JSON with automated deployment and GitHub integration"
+        ],
+        "picture": "assets/projects/Placeholder.png",
+        "link": {
+          "url": "https://Shishir420-GIT.github.io/developer-portfolio",
+          "title": "View Live Portfolio"
+        }
+      },
+      {
+        "name": "Tech Content Platform",
+        "date": "2024 - Present",
+        "description": [
+          "Creating engaging technical content across multiple platforms including YouTube and Hashnode",
+          "Developing tutorials, code walkthroughs, and educational content for developers",
+          "Building a community of learners and sharing best practices in web development",
+          "Focus on practical, real-world applications and modern development workflows"
+        ],
+        "picture": "assets/projects/Placeholder.png",
+        "link": {
+          "url": "https://www.youtube.com/channel/UCCZiCzPtg9pmDwChJ4ROIpA",
+          "title": "Watch on YouTube"
+        }
+      }
+    ]
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "jobs": [
+      {
+        "company": "Tech Industry",
+        "role": "Full Stack Developer",
+        "date": "2023 - Present",
+        "responsibilities": [
+          "Developing and maintaining scalable web applications using modern JavaScript frameworks",
+          "Implementing responsive designs and ensuring cross-browser compatibility",
+          "Collaborating with cross-functional teams to deliver high-quality software solutions",
+          "Optimizing application performance and implementing best practices for code quality",
+          "Creating technical documentation and mentoring junior developers"
+        ],
+        "logo": "assets/logos/Placeholder_Logo.png",
+        "logo_dark": "assets/logos/Placeholder_Logo.png"
+      },
+      {
+        "company": "Content Creation",
+        "role": "Tech Content Creator",
+        "date": "2023 - Present",
+        "responsibilities": [
+          "Creating educational content on web development, programming concepts, and tech trends",
+          "Building and engaging with a community of developers and tech enthusiasts",
+          "Producing high-quality video tutorials and written articles on technical topics",
+          "Collaborating with other creators and participating in tech community events",
+          "Staying updated with latest technologies and sharing insights with the community"
+        ],
+        "logo": "assets/logos/Placeholder_Logo.png",
+        "logo_dark": "assets/logos/Placeholder_Logo.png"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "categories": [
+      {
+        "name": "Frontend Development",
+        "items": [
+          "JavaScript (ES6+)",
+          "React.js",
+          "Vue.js",
+          "HTML5 & CSS3",
+          "Tailwind CSS",
+          "TypeScript",
+          "Responsive Design",
+          "Progressive Web Apps"
+        ]
+      },
+      {
+        "name": "Backend Development",
+        "items": [
+          "Node.js",
+          "Express.js",
+          "Python",
+          "RESTful APIs",
+          "GraphQL",
+          "Database Design",
+          "Authentication & Security",
+          "Microservices Architecture"
+        ]
+      },
+      {
+        "name": "Cloud & DevOps",
+        "items": [
+          "AWS Services",
+          "Docker",
+          "CI/CD Pipelines",
+          "Git & GitHub",
+          "Linux/Unix",
+          "Serverless Architecture",
+          "Infrastructure as Code",
+          "Monitoring & Logging"
+        ]
+      },
+      {
+        "name": "Content Creation & Community",
+        "items": [
+          "Technical Writing",
+          "Video Production",
+          "Community Building",
+          "Public Speaking",
+          "Tutorial Development",
+          "Social Media Strategy",
+          "Educational Content Design",
+          "Developer Advocacy"
+        ]
+      },
+      {
+        "name": "Certifications & Learning",
+        "items": [
+          {
+            "name": "View My Credly Profile",
+            "url": "https://www.credly.com/users/shishir-srivastav-who"
+          },
+          {
+            "name": "AWS Certified Solutions Architect",
+            "url": "https://www.credly.com/users/shishir-srivastav-who"
+          },
+          "Continuous Learning Mindset",
+          "Industry Best Practices"
+        ]
+      }
+    ]
+  },
+  "github_projects": {
+    "title": "Open Source Projects"
+  },
+  "footer": {
+    "show_social_links": true,
+    "show_built_with": true,
+    "built_with_text": "Built with ❤️ using vanilla JavaScript • Open Source",
+    "tagline": "Let's connect and build something amazing together! 🚀"
+  }
+}
