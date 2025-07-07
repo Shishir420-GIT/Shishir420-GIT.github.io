@@ -38,7 +38,3 @@ Let's connect and build something amazing together! 🚀
 - 🌐 **Portfolio**: [https://Shishir420-GIT.github.io/developer-portfolio](https://Shishir420-GIT.github.io/developer-portfolio)
 - 💻 **GitHub**: [https://github.com/Shishir420-GIT](https://github.com/Shishir420-GIT)
 - 🔗 **LinkedIn**: [https://www.linkedin.com/in/shishir-srivastav](https://www.linkedin.com/in/shishir-srivastav)
-
----
-
-*Based on [portfolio template](https://github.com/yashrajnayak/developer-portfolio) originally created by [Yashraj Nayak](https://github.com/yashrajnayak)*

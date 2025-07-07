@@ -7,21 +7,21 @@
     "github_projects": true
   },
   "site": {
-    "title": "Shishir Srivastav - Full Stack Developer & Tech Content Creator",
-    "description": "Full Stack Developer, Tech Content Creator, and Cloud Enthusiast. Building innovative solutions and sharing knowledge through code.",
+    "title": "Shishir Srivastav - AI/ML Engineer & Tech Content Creator",
+    "description": "Senior Python Developer with almost 5 years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?",
     "seo": {
-      "title": "Shishir Srivastav - Full Stack Developer & Tech Content Creator",
-      "description": "Full Stack Developer specializing in modern web technologies, cloud solutions, and technical content creation. Passionate about building scalable applications and sharing knowledge.",
-      "keywords": "full stack developer, web development, cloud computing, tech content creator, javascript, react, node.js, aws, programming, software engineer",
+      "title": "Shishir Srivastav - AI/ML Engineer & Tech Content Creator",
+      "description": "Senior Python Developer with almost 5 years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?",
+      "keywords": "Python, AI, ML, Multi Cloud - AWS • GCP • Azure • OCI, Expertise in Generative AI, Automation, Scripting, DevOps, Designing, Troubleshooting, software engineer",
       "author": "Shishir Srivastav",
       "og_image": "https://avatars.githubusercontent.com/Shishir420-GIT",
       "twitter_card": "summary_large_image",
-      "base_url": "https://Shishir420-GIT.github.io/developer-portfolio"
+      "base_url": "https://Shishir420-GIT.github.io"
     }
   },
   "header": {
     "greeting": "Shishir Srivastav",
-    "tagline": "Full Stack Developer & Tech Content Creator"
+    "tagline": "AI/ML Engineer & Tech Content Creator"
   },
   "social_links": [
     {
@@ -43,9 +43,21 @@
       "required": false
     },
     {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/shishir_who",
+      "icon": "instagram",
+      "required": false
+    },
+    {
       "name": "YouTube",
       "url": "https://www.youtube.com/channel/UCCZiCzPtg9pmDwChJ4ROIpA",
       "icon": "youtube",
+      "required": false
+    },
+    {
+      "name": "Hashnode",
+      "url": "https://shishirsrivastav.hashnode.dev",
+      "icon": "hashnode",
       "required": false
     },
     {
@@ -58,7 +70,7 @@
   "github_username": "Shishir420-GIT",
   "about": {
     "paragraphs": [
-      "👋 Welcome! I'm Shishir, a passionate Full Stack Developer and Tech Content Creator with a love for building innovative digital solutions that make a real impact.",
+      "👋 Welcome! I'm Senior Python Developer with almost 5 years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?",
       "🚀 I specialize in modern web technologies, cloud architecture, and creating scalable applications. When I'm not coding, you'll find me sharing knowledge through technical content, tutorials, and engaging with the developer community.",
       "💡 I believe in the power of technology to solve real-world problems and am always excited to collaborate on projects that push the boundaries of what's possible. Let's build something amazing together!"
     ]
@@ -77,7 +89,7 @@
         ],
         "picture": "assets/projects/Placeholder.png",
         "link": {
-          "url": "https://Shishir420-GIT.github.io/developer-portfolio",
+          "url": "https://Shishir420-GIT.github.io",
           "title": "View Live Portfolio"
         }
       },
@@ -102,29 +114,28 @@
     "title": "Professional Experience",
     "jobs": [
       {
-        "company": "Tech Industry",
-        "role": "Full Stack Developer",
-        "date": "2023 - Present",
+        "company": "Wipro Technologies",
+        "role": "Senior Python Developer",
+        "date": "September 2020 - Decemeber 2024",
         "responsibilities": [
-          "Developing and maintaining scalable web applications using modern JavaScript frameworks",
-          "Implementing responsive designs and ensuring cross-browser compatibility",
-          "Collaborating with cross-functional teams to deliver high-quality software solutions",
-          "Optimizing application performance and implementing best practices for code quality",
-          "Creating technical documentation and mentoring junior developers"
+          "Built RAG-based KB article retrieval for multiple customers with Gemini and Claude 3 using Vertex AI and Amazon Bedrock respectively, utilized Spanner and MongoDB for storing Vector embeddings bringing down time of resolution by 30-40%.",
+          "Developed multiple Python solutions to fetch EC2 instances data using Lambda functions and fetch WAF reports data from S3 buckets with boto3, worked with Lambda, ECR, ECS, RDS, DynamoDB, Cloud Formation (CDK), AWS CLI etc.",
+          "Implemented multiple generative AI (Gen AI) based solutions, such as Chat Interface using Lang Chain, added query analysis for improving search quality for phrasing to LLMs while maintaining chat history and meeting notes summary generator.",
+          "Ensured consistent results using Python, Terraform and PowerShell by implementing across multiple clouds such as AWS and Azure for managing servers, creating infrastructures and deploying solutions, reducing deployment time by in range of 40-50%.",
+          "As a senior developer provided feedback, mentored and guided colleagues and new joiners for smooth transition in projects, and authored white papers and SOPs for simplifying the DevOps process."
         ],
         "logo": "assets/logos/Placeholder_Logo.png",
         "logo_dark": "assets/logos/Placeholder_Logo.png"
       },
       {
-        "company": "Content Creation",
-        "role": "Tech Content Creator",
-        "date": "2023 - Present",
+        "company": "EY GDS",
+        "role": "Senior Technology Consultant II",
+        "date": "December 2024 - Present",
         "responsibilities": [
-          "Creating educational content on web development, programming concepts, and tech trends",
-          "Building and engaging with a community of developers and tech enthusiasts",
-          "Producing high-quality video tutorials and written articles on technical topics",
-          "Collaborating with other creators and participating in tech community events",
-          "Staying updated with latest technologies and sharing insights with the community"
+          "Developed a Cyber AI Package to detect PII, prompt injection, and jailbreak attempts using a combination of Microsoft Presidio, custom ML models with 97% accuracy, and pattern-based logic.",
+          "Designed solution architecture for a Policy Assessment Engine that utilizes OpenAI APIs to evaluate compliance narratives and automate risk scoring planned to reduce human effort by 50%.",
+          "Built an Agentic AI system to analyse ZScaler activity logs and generate real-time alerts based on user behaviour, enhancing cloud security posture monitoring.",
+          "Automated scripts for 20,000+ devices, utilizing CrowdStrike API and a combination of Python, AWS Lambda, EventBridge, and task schedulers."
         ],
         "logo": "assets/logos/Placeholder_Logo.png",
         "logo_dark": "assets/logos/Placeholder_Logo.png"
@@ -135,39 +146,57 @@
     "title": "Skills & Technologies",
     "categories": [
       {
-        "name": "Frontend Development",
+        "name": "Languages & Frameworks",
         "items": [
-          "JavaScript (ES6+)",
-          "React.js",
-          "Vue.js",
-          "HTML5 & CSS3",
-          "Tailwind CSS",
+          "Python",
+          "R",
+          "PowerShell",
+          "Shell Scripting",
+          "YAML",
+          "HTML5",
+          "CSS3",
+          "JavaScript",
           "TypeScript",
-          "Responsive Design",
-          "Progressive Web Apps"
+          "React.js",
+          "Node.js",
+          "Flask",
+          "Django",
+          "FastAPI",
+          "GraphQL",
+          "RESTful APIs"
         ]
       },
       {
-        "name": "Backend Development",
+        "name": "ML/DS Framework",
         "items": [
-          "Node.js",
-          "Express.js",
-          "Python",
-          "RESTful APIs",
-          "GraphQL",
-          "Database Design",
-          "Authentication & Security",
-          "Microservices Architecture"
+          "NumPy",
+          "Pandas",
+          "SciPy",
+          "Spacy",
+          "NLTK",
+          "presidio",
+          "PyTorch",
+          "Matplotlib",
+          "Scikit-learn",
+          "TensorFlow",
+          "LangChain",
+          "LangGraph",
+          "streamlit",
+          "gradio"
         ]
       },
       {
         "name": "Cloud & DevOps",
         "items": [
           "AWS Services",
+          "Google Cloud Platform (GCP)",
+          "Oracle Cloud Infrastructure (OCI)",
           "Docker",
-          "CI/CD Pipelines",
-          "Git & GitHub",
+          "Terraform",
+          "Kubernetes",
           "Linux/Unix",
+          "Git & GitHub",
+          "CI/CD Pipelines",
           "Serverless Architecture",
           "Infrastructure as Code",
           "Monitoring & Logging"
@@ -194,11 +223,45 @@
             "url": "https://www.credly.com/users/shishir-srivastav-who"
           },
           {
-            "name": "AWS Certified Solutions Architect",
-            "url": "https://www.credly.com/users/shishir-srivastav-who"
+            "name": "AWS Certified Cloud Practitioner",
+            "url": "https://www.credly.com/badges/b8badd21-2d0c-45c6-9c31-fb2a713595dc/public_url"
           },
-          "Continuous Learning Mindset",
-          "Industry Best Practices"
+          {
+            "name": "AWS Certified AI Practitioner",
+            "url": "https://www.credly.com/badges/3c883589-ee1e-432c-b405-b6141ff17bf4/public_url"
+          },
+          {
+            "name": "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+            "url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=34452D7DA32B6ACE94DD86836D9FFC7F3D28249CB2F900663E1A9BCD7D25CB2C"
+          },
+          {
+            "name": "Oracle Cloud Infrastructure 2024 Generative AI Certified Professional",
+            "url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=B7157985339B6F1CBF966978C8573A2C69C396819ED482926EF2CA6F98E62872"
+          },
+          {
+            "name": "Microsoft Certified: Azure Fundamentals",
+            "url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=B7157985339B6F1CBF966978C8573A2C69C396819ED482926EF2CA6F98E62872"
+          },
+          {
+            "name": "Red Hat Enterprise Linux Automation with Ansible (RH294) - Ver. 9.0",
+            "url": "https://www.credly.com/badges/ec689c15-91ba-4cdb-947e-dcf2adfb5806/public_url"
+          },
+          {
+            "name": "Red Hat System Administration II (RH134) - Ver. 9.0",
+            "url": "https://www.credly.com/badges/89f7608b-b908-48c5-9b65-8765a7687a07/public_url"
+          },
+          {
+            "name": "Building AI Agents with MongoDB",
+            "url": "https://www.credly.com/badges/12b6ea7b-819e-4617-8052-a715374752a2/public_url"
+          },
+          {
+            "name": "Building AI-Powered Search with MongoDB Vector Search",
+            "url": "https://www.credly.com/badges/2f86bbf4-5d5b-4a69-8675-d6f57612a93f/public_url"
+          },
+          {
+            "name": "Building RAG Apps Using MongoDB",
+            "url": "https://www.credly.com/badges/887765e6-4058-43cc-9853-d2fbe2bbe7f4/public_url"
+          }
         ]
       }
     ]
