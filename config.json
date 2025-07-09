@@ -79,33 +79,37 @@
     "title": "Featured Projects",
     "items": [
       {
-        "name": "Modern Portfolio Website",
-        "date": "2025",
+        "name": "Gemini Based- Streamlined Mobile Devices Research",
+        "date": "Dec 2024",
         "description": [
-          "A fully responsive, modern portfolio website built with vanilla JavaScript and advanced CSS",
-          "Features dark/light mode toggle, smooth animations, and dynamic content loading",
-          "Optimized for performance with lazy loading, SEO optimization, and accessibility features",
-          "Configurable through JSON with automated deployment and GitHub integration"
+          "This application uses Streamlit to compare YouTube videos by fetching transcripts, summarizing content, and generating comparison tables. It leverages Google's Gemini AI for content generation.",
+          "Features: ",
+          "Extract transcripts from YouTube videos.",
+          "Summarize video content using Gemini AI.",
+          "Generate comparison tables in HTML, CSV, and PDF formats.",
+          "Download comparison results."
         ],
-        "picture": "assets/projects/Placeholder.png",
+        "picture": "assets/projects/mobile-research.png",
         "link": {
-          "url": "https://Shishir420-GIT.github.io",
-          "title": "View Live Portfolio"
+          "url": "https://github.com/Shishir420-GIT/BnB-Hack-A-Thon",
+          "title": "View Project"
         }
       },
       {
-        "name": "Tech Content Platform",
-        "date": "2024 - Present",
+        "name": "Automation Generator Tool",
+        "date": "July 2024",
         "description": [
-          "Creating engaging technical content across multiple platforms including YouTube and Hashnode",
-          "Developing tutorials, code walkthroughs, and educational content for developers",
-          "Building a community of learners and sharing best practices in web development",
-          "Focus on practical, real-world applications and modern development workflows"
+          "This application allows users to upload an SOP based pdf, which lets them create an Automation around it, by providing a block daigram (text based), a script and list of pre-requisites to run the script, The AI being utilized here is Gemini-pro.",
+          "Features: ",
+          "Queries MongoDB for existing solutions.",
+          "Upload SOP based PDF & Summarising of the PDF.",
+          "AI-powered script, flow and pre-requisite generation.",
+          "Option to regenerate review code and regenerate it."
         ],
         "picture": "assets/projects/Placeholder.png",
         "link": {
-          "url": "https://www.youtube.com/channel/UCCZiCzPtg9pmDwChJ4ROIpA",
-          "title": "Watch on YouTube"
+          "url": "https://github.com/Shishir420-GIT/Automation-Generator",
+          "title": "View Project"
         }
       }
     ]
@@ -124,8 +128,8 @@
           "Ensured consistent results using Python, Terraform and PowerShell by implementing across multiple clouds such as AWS and Azure for managing servers, creating infrastructures and deploying solutions, reducing deployment time by in range of 40-50%.",
           "As a senior developer provided feedback, mentored and guided colleagues and new joiners for smooth transition in projects, and authored white papers and SOPs for simplifying the DevOps process."
         ],
-        "logo": "assets/logos/Placeholder_Logo.png",
-        "logo_dark": "assets/logos/Placeholder_Logo.png"
+        "logo": "assets/logos/Wipro_Logo.png",
+        "logo_dark": "assets/logos/Wipro_Logo.png"
       },
       {
         "company": "EY GDS",
@@ -137,8 +141,8 @@
           "Built an Agentic AI system to analyse ZScaler activity logs and generate real-time alerts based on user behaviour, enhancing cloud security posture monitoring.",
           "Automated scripts for 20,000+ devices, utilizing CrowdStrike API and a combination of Python, AWS Lambda, EventBridge, and task schedulers."
         ],
-        "logo": "assets/logos/Placeholder_Logo.png",
-        "logo_dark": "assets/logos/Placeholder_Logo.png"
+        "logo": "assets/logos/ey-logo-black.png",
+        "logo_dark": "assets/logos/ey-logo-black.png"
       }
     ]
   },
