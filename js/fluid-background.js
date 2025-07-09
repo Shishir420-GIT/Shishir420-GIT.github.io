@@ -261,20 +261,18 @@ export class FluidBackground {
 
     setupEventListeners() {
         // Mouse events
-        this.canvas.addEventListener('mousemove', (e) => {
-            const rect = this.canvas.getBoundingClientRect();
-            const x = (e.clientX - rect.left) / rect.width;
-            const y = 1.0 - (e.clientY - rect.top) / rect.height;
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth;
+            const y = 1.0 - e.clientY / window.innerHeight;
             this.updatePointer(x, y);
         });
 
         // Touch events
-        this.canvas.addEventListener('touchmove', (e) => {
+        document.addEventListener('touchmove', (e) => {
             e.preventDefault();
-            const rect = this.canvas.getBoundingClientRect();
             const touch = e.touches[0];
-            const x = (touch.clientX - rect.left) / rect.width;
-            const y = 1.0 - (touch.clientY - rect.top) / rect.height;
+            const x = touch.clientX / window.innerWidth;
+            const y = 1.0 - touch.clientY / window.innerHeight;
             this.updatePointer(x, y);
         }, { passive: false });
 

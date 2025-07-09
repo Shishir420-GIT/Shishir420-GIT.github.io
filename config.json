@@ -1,6 +1,7 @@
 {
   "features": {
     "about": true,
+    "achievements": true,
     "projects": true,
     "experience": true,
     "skills": true,
@@ -73,6 +74,55 @@
       "👋 Welcome! I'm Senior Python Developer with almost 5 years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?",
       "🚀 I specialize in modern web technologies, cloud architecture, and creating scalable applications. When I'm not coding, you'll find me sharing knowledge through technical content, tutorials, and engaging with the developer community.",
       "💡 I believe in the power of technology to solve real-world problems and am always excited to collaborate on projects that push the boundaries of what's possible. Let's build something amazing together!"
+    ]
+  },
+  "achievements": {
+    "title": "Key Achievements",
+    "items": [
+      {
+        "type": "topmate",
+        "title": "Top 1% Mentor",
+        "stat": "Top 1%",
+        "description": "Ranked in the top 1% of mentors on Topmate, helping developers and professionals grow in their AI/ML careers with personalized guidance and industry insights.",
+        "icon": "🏆",
+        "link": {
+          "url": "https://topmate.io/shishir_srivastav",
+          "title": "View Profile"
+        }
+      },
+      {
+        "type": "github",
+        "title": "Open Source Contributions",
+        "stat": "50+",
+        "description": "Active contributor to open source projects with 50+ repositories, focusing on AI/ML tools, automation scripts, and developer productivity solutions.",
+        "icon": "💻",
+        "link": {
+          "url": "https://github.com/Shishir420-GIT",
+          "title": "View GitHub"
+        }
+      },
+      {
+        "type": "linkedin",
+        "title": "Professional Network",
+        "stat": "5K+",
+        "description": "Built a strong professional network of 5,000+ connections, actively sharing knowledge and insights about AI/ML, cloud technologies, and career development.",
+        "icon": "🌐",
+        "link": {
+          "url": "https://www.linkedin.com/in/shishir-srivastav",
+          "title": "Connect on LinkedIn"
+        }
+      },
+      {
+        "type": "certifications",
+        "title": "Industry Certifications",
+        "stat": "10+",
+        "description": "Earned 10+ professional certifications from AWS, Oracle, Microsoft, and other leading technology companies, demonstrating expertise across multiple cloud platforms.",
+        "icon": "🎓",
+        "link": {
+          "url": "https://www.credly.com/users/shishir-srivastav-who",
+          "title": "View Certifications"
+        }
+      }
     ]
   },
   "projects": {

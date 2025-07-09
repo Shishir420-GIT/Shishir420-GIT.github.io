@@ -21,6 +21,7 @@ export class SectionManager {
         // Ensure features object exists with defaults
         const features = {
             about: true,
+            achievements: true,
             projects: true,
             experience: true,
             skills: true,
@@ -30,6 +31,7 @@ export class SectionManager {
         
         // Handle sections based on feature flags
         this.toggleSection('about', features.about);
+        this.toggleSection('achievements', features.achievements);
         this.toggleSection('projects', features.projects);
         this.toggleSection('experience', features.experience);
         this.toggleSection('skills', features.skills);
@@ -38,6 +40,10 @@ export class SectionManager {
         // Update sections that are enabled and have content
         if (features.about) {
             this.updateAboutSection(config);
+        }
+        
+        if (features.achievements) {
+            this.updateAchievementsSection(config);
         }
         
         if (features.projects) {
@@ -69,6 +75,67 @@ export class SectionManager {
         } else {
             aboutSection.innerHTML = '<p>Welcome to my portfolio!</p>';
         }
+    }
+
+    // Update achievements section
+    updateAchievementsSection(config) {
+        const achievementsSection = document.querySelector('.achievements');
+        const titleElement = achievementsSection.querySelector('h2');
+        
+        if (titleElement) {
+            titleElement.textContent = config.achievements?.title || 'Achievements';
+        }
+        
+        const achievementsGrid = achievementsSection.querySelector('.achievements-grid');
+        const fragment = document.createDocumentFragment();
+        
+        // Clear existing achievements
+        achievementsGrid.innerHTML = '';
+        
+        // Create achievement cards
+        if (config.achievements?.items?.length) {
+            config.achievements.items.forEach(achievement => {
+                const achievementCard = this.createAchievementCard(achievement);
+                fragment.appendChild(achievementCard);
+            });
+        } else {
+            // Show placeholder for empty achievements
+            const emptyState = document.createElement('div');
+            emptyState.className = 'achievement-card';
+            emptyState.innerHTML = `
+                <div class="achievement-icon">🏆</div>
+                <h3>Your Achievements Will Appear Here</h3>
+                <div class="achievement-stat">0</div>
+                <div class="achievement-description">Add your achievements to the config.json file to showcase your accomplishments and milestones.</div>
+            `;
+            fragment.appendChild(emptyState);
+        }
+        
+        // Append all achievement cards at once
+        achievementsGrid.appendChild(fragment);
+    }
+
+    // Create individual achievement card
+    createAchievementCard(achievement) {
+        const achievementCard = document.createElement('div');
+        achievementCard.className = `achievement-card ${achievement.type || ''}`;
+        
+        achievementCard.innerHTML = `
+            <div class="achievement-icon">${achievement.icon || '🏆'}</div>
+            <h3>${achievement.title}</h3>
+            <div class="achievement-stat">${achievement.stat}</div>
+            <div class="achievement-description">${achievement.description}</div>
+            ${achievement.link ? `
+            <a href="${achievement.link.url}" target="_blank" rel="noopener noreferrer" class="achievement-link" aria-label="View ${achievement.title}">
+                ${achievement.link.title || 'Learn More'}
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                </svg>
+            </a>
+            ` : ''}
+        `;
+        
+        return achievementCard;
     }
 
     // Update projects section dynamically
