@@ -106,7 +106,7 @@
           "AI-powered script, flow and pre-requisite generation.",
           "Option to regenerate review code and regenerate it."
         ],
-        "picture": "assets/projects/Placeholder.png",
+        "picture": "assets/projects/automation-generator.png",
         "link": {
           "url": "https://github.com/Shishir420-GIT/Automation-Generator",
           "title": "View Project"
@@ -128,8 +128,8 @@
           "Ensured consistent results using Python, Terraform and PowerShell by implementing across multiple clouds such as AWS and Azure for managing servers, creating infrastructures and deploying solutions, reducing deployment time by in range of 40-50%.",
           "As a senior developer provided feedback, mentored and guided colleagues and new joiners for smooth transition in projects, and authored white papers and SOPs for simplifying the DevOps process."
         ],
-        "logo": "assets/logos/Wipro_Logo.png",
-        "logo_dark": "assets/logos/Wipro_Logo.png"
+        "logo": "assets/logos/Wipro-Logo.png",
+        "logo_dark": "assets/logos/Wipro-Logo.png"
       },
       {
         "company": "EY GDS",
