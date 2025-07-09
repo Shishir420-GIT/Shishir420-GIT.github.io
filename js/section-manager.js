@@ -355,7 +355,7 @@ export class SectionManager {
         // Create skill categories
         if (config.skills?.categories?.length) {
             config.skills.categories.forEach(category => {
-                const categoryDiv = this.createSkillCategory(category);
+                const categoryDiv = this.createSkillCategory(category, config.skills.categories.indexOf(category));
                 fragment.appendChild(categoryDiv);
             });
         } else {
@@ -364,12 +364,13 @@ export class SectionManager {
             emptyState.className = 'skill-category';
             emptyState.innerHTML = `
                 <h3>Your Skills Will Appear Here</h3>
-                <ul>
-                    <li>Add your technical skills to the config.json file</li>
-                    <li>Organize them into categories</li>
-                    <li>Include certifications with links</li>
-                    <li>Showcase your expertise</li>
-                </ul>
+                <div class="tech-stack-grid">
+                    <div class="tech-item">
+                        <div class="tech-icon">💻</div>
+                        <div class="tech-name">Add Skills</div>
+                        <div class="tech-level">Config</div>
+                    </div>
+                </div>
             `;
             fragment.appendChild(emptyState);
         }
@@ -379,28 +380,124 @@ export class SectionManager {
     }
 
     // Create individual skill category
-    createSkillCategory(category) {
+    createSkillCategory(category, index) {
         const categoryDiv = document.createElement('div');
-        categoryDiv.className = 'skill-category';
         
-        const itemsHtml = Array.isArray(category.items)
-            ? category.items.map(item => {
-                // Check if item is an object with name and url properties (certification link)
-                if (typeof item === 'object' && item.name && item.url) {
-                    return `<li><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.name}</a></li>`;
-                } else {
-                    return `<li>${item}</li>`;
-                }
-            }).join('')
-            : `<li>${category.items}</li>`;
+        // Determine category type for styling
+        let categoryType = '';
+        const categoryName = category.name.toLowerCase();
+        if (categoryName.includes('programming') || categoryName.includes('language')) {
+            categoryType = 'programming';
+        } else if (categoryName.includes('tool') || categoryName.includes('tech')) {
+            categoryType = 'tools';
+        } else if (categoryName.includes('certification')) {
+            categoryType = 'certifications';
+        }
         
-        categoryDiv.innerHTML = `
-            <h3>${category.name}</h3>
-            <ul>
-                ${itemsHtml}
-            </ul>
-        `;
+        categoryDiv.className = `skill-category ${categoryType}`;
+        
+        // Handle certifications differently
+        if (categoryType === 'certifications') {
+            const itemsHtml = Array.isArray(category.items)
+                ? category.items.map(item => {
+                    if (typeof item === 'object' && item.name && item.url) {
+                        return `
+                            <div class="certification-item">
+                                <a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.name}</a>
+                            </div>
+                        `;
+                    } else {
+                        return `
+                            <div class="certification-item">
+                                <span>${item}</span>
+                            </div>
+                        `;
+                    }
+                }).join('')
+                : `<div class="certification-item"><span>${category.items}</span></div>`;
+            
+            categoryDiv.innerHTML = `
+                <h3>${category.name}</h3>
+                <div class="certifications-list">
+                    ${itemsHtml}
+                </div>
+            `;
+        } else {
+            // Tech stack grid for other categories
+            const techItems = Array.isArray(category.items) ? category.items : [category.items];
+            const techStackHtml = techItems.map(item => {
+                const techName = typeof item === 'object' ? item.name : item;
+                const techLevel = typeof item === 'object' ? (item.level || 'Advanced') : 'Advanced';
+                const techIcon = this.getTechIcon(techName);
+                
+                return `
+                    <div class="tech-item">
+                        <div class="tech-icon">${techIcon}</div>
+                        <div class="tech-name">${techName}</div>
+                        <div class="tech-level">${techLevel}</div>
+                    </div>
+                `;
+            }).join('');
+            
+            categoryDiv.innerHTML = `
+                <h3>${category.name}</h3>
+                <div class="tech-stack-grid">
+                    ${techStackHtml}
+                </div>
+            `;
+        }
         
         return categoryDiv;
+    }
+
+    // Get appropriate icon for technology
+    getTechIcon(techName) {
+        const iconMap = {
+            // Languages
+            'Python': '🐍',
+            'JavaScript': '🟨',
+            'TypeScript': '🔷',
+            'Java': '☕',
+            'C++': '⚡',
+            'R': '📊',
+            'HTML5': '🌐',
+            'CSS3': '🎨',
+            'Shell Scripting': '🐚',
+            'PowerShell': '💙',
+            'YAML': '📄',
+            
+            // Frameworks
+            'React.js': '⚛️',
+            'Node.js': '🟢',
+            'Flask': '🌶️',
+            'Django': '🎸',
+            'FastAPI': '⚡',
+            'GraphQL': '🔗',
+            'RESTful APIs': '🔌',
+            
+            // ML/DS
+            'NumPy': '🔢',
+            'Pandas': '🐼',
+            'PyTorch': '🔥',
+            'TensorFlow': '🧠',
+            'Scikit-learn': '🤖',
+            'LangChain': '🔗',
+            'Streamlit': '📊',
+            'Gradio': '🎛️',
+            
+            // Cloud & DevOps
+            'AWS Services': '☁️',
+            'Google Cloud Platform (GCP)': '🌩️',
+            'Docker': '🐳',
+            'Kubernetes': '⚓',
+            'Terraform': '🏗️',
+            'Linux/Unix': '🐧',
+            'Git & GitHub': '🐙',
+            
+            // Default
+            'default': '⚙️'
+        };
+        
+        return iconMap[techName] || iconMap['default'];
     }
 }

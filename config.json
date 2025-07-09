@@ -220,73 +220,52 @@
     "title": "Skills & Technologies",
     "categories": [
       {
-        "name": "Languages & Frameworks",
+        "name": "Front-End",
         "items": [
-          "Python",
-          "R",
-          "PowerShell",
-          "Shell Scripting",
-          "YAML",
           "HTML5",
           "CSS3",
           "JavaScript",
           "TypeScript",
-          "React.js",
+          "React.js"
+        ]
+      },
+      {
+        "name": "Back-End",
+        "items": [
           "Node.js",
-          "Flask",
-          "Django",
-          "FastAPI",
-          "GraphQL",
-          "RESTful APIs"
+          "Express.js",
+          "MongoDB",
+          "Firebase",
+          "MySQL",
+          "PHP",
+          "REST API",
+          "GraphQL"
         ]
       },
       {
-        "name": "ML/DS Framework",
+        "name": "Programming",
         "items": [
-          "NumPy",
-          "Pandas",
-          "SciPy",
-          "Spacy",
-          "NLTK",
-          "presidio",
-          "PyTorch",
-          "Matplotlib",
-          "Scikit-learn",
-          "TensorFlow",
-          "LangChain",
-          "LangGraph",
-          "streamlit",
-          "gradio"
+          "JavaScript",
+          "TypeScript",
+          "Python",
+          "C++",
+          "Java",
+          "R"
         ]
       },
       {
-        "name": "Cloud & DevOps",
+        "name": "Tech & Tools",
         "items": [
-          "AWS Services",
-          "Google Cloud Platform (GCP)",
-          "Oracle Cloud Infrastructure (OCI)",
-          "Docker",
-          "Terraform",
-          "Kubernetes",
-          "Linux/Unix",
-          "Git & GitHub",
-          "CI/CD Pipelines",
-          "Serverless Architecture",
-          "Infrastructure as Code",
-          "Monitoring & Logging"
-        ]
-      },
-      {
-        "name": "Content Creation & Community",
-        "items": [
-          "Technical Writing",
-          "Video Production",
-          "Community Building",
-          "Public Speaking",
-          "Tutorial Development",
-          "Social Media Strategy",
-          "Educational Content Design",
-          "Developer Advocacy"
+          "NPM",
+          "Bun",
+          "Git",
+          "GitHub",
+          "Vite.js",
+          "Socket.io",
+          "Netlify",
+          "Vercel",
+          "VS Code",
+          "Figma"
         ]
       },
       {

@@ -7,46 +7,61 @@
 
 /* Custom Properties */
 :root {
-    --primary-color: #3b82f6;
-    --primary-color-dark: #2563eb;
-    --secondary-color: #1e293b;
-    --accent-color: #10b981;
-    --background-color: #f8fafc;
-    --card-background: #ffffff;
-    --text-color: #1e293b;
-    --text-muted: #64748b;
-    --heading-color: #3b82f6;
-    --border-color: #e2e8f0;
+    --primary-color: #00d4ff;
+    --primary-color-dark: #0099cc;
+    --secondary-color: #0f0f23;
+    --accent-color: #ff6b6b;
+    --success-color: #4ecdc4;
+    --warning-color: #ffe66d;
+    --background-color: #0a0a0f;
+    --card-background: #1a1a2e;
+    --text-color: #e4e4e7;
+    --text-muted: #a1a1aa;
+    --heading-color: #00d4ff;
+    --border-color: #27272a;
     --border-radius: 1rem;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --focus-ring-color: #3b82f6;
+    --focus-ring-color: #00d4ff;
     --focus-ring-offset: 3px;
-    --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-    --gradient-accent: linear-gradient(135deg, #10b981 0%, #059669 100%);
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --gradient-primary: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+    --gradient-accent: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+    --gradient-success: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+    --glow-primary: 0 0 20px rgba(0, 212, 255, 0.3);
+    --glow-accent: 0 0 20px rgba(255, 107, 107, 0.3);
 }
 
 /* Dark mode */
 :root[data-theme="dark"] {
-    --primary-color: #60a5fa;
-    --primary-color-dark: #3b82f6;
-    --accent-color: #34d399;
-    --background-color: #0f172a;
-    --card-background: #1e293b;
-    --text-color: #f1f5f9;
-    --text-muted: #94a3b8;
-    --heading-color: #60a5fa;
-    --border-color: #374151;
-    --focus-ring-color: #60a5fa;
-    --gradient-primary: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
-    --gradient-accent: linear-gradient(135deg, #34d399 0%, #10b981 100%);
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+    /* Dark mode uses same colors as they're already dark */
+    --background-color: #050507;
+    --card-background: #0f0f1a;
+    --border-color: #1a1a2e;
+}
+
+/* Light mode override */
+:root[data-theme="light"] {
+    --primary-color: #0066cc;
+    --primary-color-dark: #004499;
+    --accent-color: #ff4757;
+    --success-color: #2ed573;
+    --background-color: #f8fafc;
+    --card-background: #ffffff;
+    --text-color: #1e293b;
+    --text-muted: #64748b;
+    --heading-color: #0066cc;
+    --border-color: #e2e8f0;
+    --gradient-primary: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+    --gradient-accent: linear-gradient(135deg, #ff4757 0%, #ff3742 100%);
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --glow-primary: 0 0 20px rgba(0, 102, 204, 0.2);
+    --glow-accent: 0 0 20px rgba(255, 71, 87, 0.2);
 }
 
 /* Base Styles */

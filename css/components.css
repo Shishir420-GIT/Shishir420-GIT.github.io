@@ -3,11 +3,13 @@
     background: var(--card-background);
     border-radius: var(--border-radius);
     padding: 2rem;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-lg);
     transition: var(--transition);
     border: 1px solid var(--border-color);
     position: relative;
     overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .card::before {
@@ -24,7 +26,7 @@
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-xl);
+    box-shadow: var(--shadow-xl), var(--glow-primary);
 }
 
 .card:hover::before {
@@ -35,29 +37,35 @@
 .custom-list {
     list-style: none;
     color: var(--text-muted);
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
 }
 
 .custom-list li {
     margin-bottom: 0.75rem;
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
     line-height: 1.6;
     transition: var(--transition);
+    background: rgba(0, 212, 255, 0.05);
+    border-radius: 6px;
+    padding: 0.75rem 1rem 0.75rem 2rem;
+    border-left: 3px solid var(--primary-color);
 }
 
 .custom-list li::before {
-    content: "▶";
+    content: ">";
     position: absolute;
-    left: 0;
+    left: 0.75rem;
     color: var(--primary-color);
-    font-size: 0.8rem;
-    top: 0.1rem;
+    font-weight: bold;
+    font-family: monospace;
     transition: var(--transition);
 }
 
 .custom-list li:hover {
     color: var(--text-color);
     transform: translateX(4px);
+    background: rgba(0, 212, 255, 0.1);
 }
 
 .custom-list li:hover::before {
@@ -120,16 +128,18 @@
     font-size: 0.95rem;
     position: relative;
     overflow: hidden;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
 }
 
 .btn-primary {
     background: var(--gradient-primary);
     color: white;
+    box-shadow: var(--shadow-md);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-lg), var(--glow-primary);
 }
 
 .btn-outline {
@@ -141,11 +151,12 @@
 .btn-outline:hover {
     background: var(--primary-color);
     color: white;
+    box-shadow: var(--shadow-md), var(--glow-primary);
 }
 
 /* Loading states */
 .loading-shimmer {
-    background: linear-gradient(90deg, var(--border-color) 25%, transparent 50%, var(--border-color) 75%);
+    background: linear-gradient(90deg, var(--border-color) 25%, rgba(0, 212, 255, 0.1) 50%, var(--border-color) 75%);
     background-size: 200% 100%;
     animation: shimmer 2s infinite;
 }
@@ -153,4 +164,27 @@
 @keyframes shimmer {
     0% { background-position: -200% 0; }
     100% { background-position: 200% 0; }
+}
+
+/* Code block styling */
+.code-block {
+    background: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: calc(var(--border-radius) / 2);
+    padding: 1rem;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    position: relative;
+    overflow-x: auto;
+}
+
+.code-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-primary);
 }
