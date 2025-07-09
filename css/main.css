@@ -2,6 +2,7 @@
 @import url('./base.css');
 @import url('./components.css');
 @import url('./loading.css');
+@import url('./fluid-background.css');
 @import url('./theme.css');
 @import url('./header.css');
 @import url('./about.css');

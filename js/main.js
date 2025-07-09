@@ -7,6 +7,7 @@ import { SectionManager } from './section-manager.js';
 import { HeaderManager } from './header-manager.js';
 import { GitHubProjectsManager } from './github-projects-manager.js';
 import { FooterManager } from './footer-manager.js';
+import { FluidBackground } from './fluid-background.js';
 
 class PortfolioApp {
     constructor() {
@@ -18,12 +19,16 @@ class PortfolioApp {
         this.headerManager = new HeaderManager();
         this.githubProjectsManager = new GitHubProjectsManager();
         this.footerManager = new FooterManager();
+        this.fluidBackground = new FluidBackground();
     }
 
     async init() {
         try {
             // Initialize theme first
             this.themeManager.init();
+
+            // Initialize fluid background
+            this.fluidBackground.init();
 
             // Load configuration
             const config = await this.configManager.loadConfig();
