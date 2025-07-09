@@ -22,7 +22,7 @@
   },
   "header": {
     "greeting": "Shishir Srivastav",
-    "tagline": "AI/ML Engineer & Tech Content Creator"
+    "tagline": "Senior AI/ML Engineer & Tech Content Creator"
   },
   "social_links": [
     {
@@ -33,7 +33,7 @@
     },
     {
       "name": "LinkedIn",
-      "url": "https://www.linkedin.com/in/shishir-srivastav",
+      "url": "https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=shishir-srivastav",
       "icon": "linkedin",
       "required": true
     },
@@ -45,13 +45,13 @@
     },
     {
       "name": "Instagram",
-      "url": "https://www.instagram.com/shishir_who",
+      "url": "https://www.instagram.com/programmatic.ly",
       "icon": "instagram",
       "required": false
     },
     {
       "name": "YouTube",
-      "url": "https://www.youtube.com/channel/UCCZiCzPtg9pmDwChJ4ROIpA",
+      "url": "https://www.youtube.com/channel/UCCZiCzPtg9pmDwChJ4ROIpA?sub_confirmation=1",
       "icon": "youtube",
       "required": false
     },
@@ -71,14 +71,34 @@
   "github_username": "Shishir420-GIT",
   "about": {
     "paragraphs": [
-      "👋 Welcome! I'm Senior Python Developer with almost 5 years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?",
-      "🚀 I specialize in modern web technologies, cloud architecture, and creating scalable applications. When I'm not coding, you'll find me sharing knowledge through technical content, tutorials, and engaging with the developer community.",
-      "💡 I believe in the power of technology to solve real-world problems and am always excited to collaborate on projects that push the boundaries of what's possible. Let's build something amazing together!"
+      "👋 Welcome! I'm Senior Developer with almost 5 years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?"
     ]
   },
   "achievements": {
-    "title": "Key Achievements",
+    "title": "Key Highlights",
     "items": [
+      {
+        "type": "youtube",
+        "title": "YouTube Channel",
+        "stat": "Some Subscribers",
+        "description": "Created a YouTube channel for sharing tutorials and insights on AI/ML, cloud technologies, and software development best practices.",
+        "icon": "📹",
+        "link": {
+          "url": "https://www.youtube.com/channel/UCCZiCzPtg9pmDwChJ4ROIpA?sub_confirmation=1",
+          "title": "Watch Videos"
+        }
+      },
+      {
+        "type": "linkedin",
+        "title": "Professional Network",
+        "stat": "5K+",
+        "description": "Built a strong professional network of 5,000+ connections, actively sharing knowledge and insights about AI/ML, cloud technologies, and career development.",
+        "icon": "🌐",
+        "link": {
+          "url": "https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=shishir-srivastav",
+          "title": "Connect on LinkedIn"
+        }
+      },
       {
         "type": "topmate",
         "title": "Top 1% Mentor",
@@ -91,25 +111,25 @@
         }
       },
       {
-        "type": "github",
-        "title": "Open Source Contributions",
-        "stat": "50+",
-        "description": "Active contributor to open source projects with 50+ repositories, focusing on AI/ML tools, automation scripts, and developer productivity solutions.",
-        "icon": "💻",
+        "type": "instagram",
+        "title": "Instagram Community",
+        "stat": "Some Followers",
+        "description": "Building an engaged community on Instagram, sharing insights on AI/ML, cloud technologies, and personal development.",
+        "icon": "📸",
         "link": {
-          "url": "https://github.com/Shishir420-GIT",
-          "title": "View GitHub"
+          "url": "https://www.instagram.com/programmatic.ly",
+          "title": "Connect on Instagram"
         }
       },
       {
-        "type": "linkedin",
-        "title": "Professional Network",
-        "stat": "5K+",
-        "description": "Built a strong professional network of 5,000+ connections, actively sharing knowledge and insights about AI/ML, cloud technologies, and career development.",
-        "icon": "🌐",
+        "type": "hashnode",
+        "title": "Hashnode Community",
+        "stat": "Some Followers",
+        "description": "Growing a community on Hashnode, sharing articles and tutorials on AI/ML, cloud technologies, and software development.",
+        "icon": "📝",
         "link": {
-          "url": "https://www.linkedin.com/in/shishir-srivastav",
-          "title": "Connect on LinkedIn"
+          "url": "https://shishirsrivastav.hashnode.dev",
+          "title": "Read Articles"
         }
       },
       {
