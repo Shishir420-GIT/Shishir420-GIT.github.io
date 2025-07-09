@@ -34,8 +34,8 @@ export class SectionManager {
         this.toggleSection('achievements', features.achievements);
         this.toggleSection('projects', features.projects);
         this.toggleSection('experience', features.experience);
-        this.toggleSection('skills', features.skills);
         this.toggleSection('projects-on-github', features.github_projects);
+        this.toggleSection('skills', features.skills);
         
         // Update sections that are enabled and have content
         if (features.about) {
@@ -54,16 +54,16 @@ export class SectionManager {
             this.updateExperienceSection(config);
         }
         
-        if (features.skills) {
-            this.updateSkillsSection(config);
-        }
-        
         // Update "Projects on GitHub" section title from config if available
         if (features.github_projects && config.github_projects?.title) {
             const githubProjectsTitle = document.querySelector('.projects-on-github h2');
             if (githubProjectsTitle) {
                 githubProjectsTitle.textContent = config.github_projects.title;
             }
+        }
+        
+        if (features.skills) {
+            this.updateSkillsSection(config);
         }
     }
 
