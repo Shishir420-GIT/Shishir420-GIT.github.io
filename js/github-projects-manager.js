@@ -29,7 +29,7 @@ export class GitHubProjectsManager {
             
             // Filter repositories that have "featured" topic
             const featuredRepos = repos.filter(repo => 
-                repo.topics && repo.topics.includes('featured')
+                repo.topics && repo.topics.includes('community')
             );
             
             if (featuredRepos.length > 0) {

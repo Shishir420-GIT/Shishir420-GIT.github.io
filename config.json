@@ -166,23 +166,6 @@
         }
       },
       {
-        "name": "Gemini Based- Streamlined Mobile Devices Research",
-        "date": "Dec 2024",
-        "description": [
-          "This application uses Streamlit to compare YouTube videos by fetching transcripts, summarizing content, and generating comparison tables. It leverages Google's Gemini AI for content generation.",
-          "Features: ",
-          "Extract transcripts from YouTube videos.",
-          "Summarize video content using Gemini AI.",
-          "Generate comparison tables in HTML, CSV, and PDF formats.",
-          "Download comparison results."
-        ],
-        "picture": "assets/projects/mobile-research.png",
-        "link": {
-          "url": "https://github.com/Shishir420-GIT/BnB-Hack-A-Thon",
-          "title": "View Project"
-        }
-      },
-      {
         "name": "Automation Generator Tool",
         "date": "July 2024",
         "description": [
@@ -198,12 +181,60 @@
           "url": "https://github.com/Shishir420-GIT/Automation-Generator",
           "title": "View Project"
         }
+      },
+      {
+        "name": "Automated Data filling into CRM Tool",
+        "date": "June 2025",
+        "description": [
+          "A modern full-stack application that uses AI to extract contact, company, and deal information from meeting summaries. Built with React frontend and FastAPI backend.",
+          "Features: ",
+          "AI-Powered Extraction: Uses OpenAI GPT models to extract structured CRM data",
+          "PII Detection: Identifies and extracts personally identifiable information",
+          "Data Persistence: MongoDB Atlas integration for storing leads",
+          "Export Capabilities: Download data as CSV or JSON",
+          "Dashboard Analytics: View statistics and insights"
+        ],
+        "picture": "assets/projects/crm-filler.png",
+        "link": {
+          "url": "https://github.com/Shishir420-GIT/Automated-Data-Filler-Agent",
+          "title": "View Project"
+        }
+      },
+      {
+        "name": "Gemini Based- Streamlined Mobile Devices Research",
+        "date": "Dec 2024",
+        "description": [
+          "This application uses Streamlit to compare YouTube videos by fetching transcripts, summarizing content, and generating comparison tables. It leverages Google's Gemini AI for content generation.",
+          "Features: ",
+          "Extract transcripts from YouTube videos.",
+          "Summarize video content using Gemini AI.",
+          "Generate comparison tables in HTML, CSV, and PDF formats.",
+          "Download comparison results."
+        ],
+        "picture": "assets/projects/mobile-research.png",
+        "link": {
+          "url": "https://github.com/Shishir420-GIT/BnB-Hack-A-Thon",
+          "title": "View Project"
+        }
       }
     ]
   },
   "experience": {
     "title": "Professional Experience",
     "jobs": [
+      {
+        "company": "EY GDS",
+        "role": "Senior Technology Consultant II",
+        "date": "December 2024 - Present",
+        "responsibilities": [
+          "Developed a Cyber AI Package to detect PII, prompt injection, and jailbreak attempts using a combination of Microsoft Presidio, custom ML models with 97% accuracy, and pattern-based logic.",
+          "Designed solution architecture for a Policy Assessment Engine that utilizes OpenAI APIs to evaluate compliance narratives and automate risk scoring planned to reduce human effort by 50%.",
+          "Built an Agentic AI system to analyse ZScaler activity logs and generate real-time alerts based on user behaviour, enhancing cloud security posture monitoring.",
+          "Automated scripts for 20,000+ devices, utilizing CrowdStrike API and a combination of Python, AWS Lambda, EventBridge, and task schedulers."
+        ],
+        "logo": "assets/logos/ey-logo-black.png",
+        "logo_dark": "assets/logos/ey-logo-black.png"
+      },
       {
         "company": "Wipro Technologies",
         "role": "Senior Python Developer",
@@ -217,19 +248,6 @@
         ],
         "logo": "assets/logos/Wipro-Logo.png",
         "logo_dark": "assets/logos/Wipro-Logo.png"
-      },
-      {
-        "company": "EY GDS",
-        "role": "Senior Technology Consultant II",
-        "date": "December 2024 - Present",
-        "responsibilities": [
-          "Developed a Cyber AI Package to detect PII, prompt injection, and jailbreak attempts using a combination of Microsoft Presidio, custom ML models with 97% accuracy, and pattern-based logic.",
-          "Designed solution architecture for a Policy Assessment Engine that utilizes OpenAI APIs to evaluate compliance narratives and automate risk scoring planned to reduce human effort by 50%.",
-          "Built an Agentic AI system to analyse ZScaler activity logs and generate real-time alerts based on user behaviour, enhancing cloud security posture monitoring.",
-          "Automated scripts for 20,000+ devices, utilizing CrowdStrike API and a combination of Python, AWS Lambda, EventBridge, and task schedulers."
-        ],
-        "logo": "assets/logos/ey-logo-black.png",
-        "logo_dark": "assets/logos/ey-logo-black.png"
       }
     ]
   },
@@ -237,52 +255,83 @@
     "title": "Skills & Technologies",
     "categories": [
       {
-        "name": "Front-End",
+        "name": "Programming Languages",
         "items": [
-          "HTML5",
-          "CSS3",
+          "Python",
+          "R",
+          "Java",
           "JavaScript",
           "TypeScript",
-          "React.js"
+          "PowerShell",
+          "Shell/Bash Scripting"
+        ]
+      },
+      {
+        "name": "AI & Machine Learning",
+        "items": [
+          "AI Security",
+          "Generative AI",
+          "Natural Language Processing (NLP)",
+          "Machine Learning",
+          "Deep Learning",
+          "Computer Vision",
+          "AI Agents",
+          "Function Calling",
+          "RAG (Retrieval Augmented Generation)",
+          "LangChain",
+          "LangGraph"
+        ]
+      },
+      {
+        "name": "Cloud Platforms",
+        "items": [
+          "AWS",
+          "Google Cloud Platform (GCP)",
+          "Microsoft Azure",
+          "Oracle Cloud Infrastructure (OCI)"
+        ]
+      },
+      {
+        "name": "DevOps & Automation",
+        "items": [
+          "CI/CD",
+          "Infrastructure as Code (IaC)",
+          "Docker",
+          "Kubernetes",
+          "Terraform",
+          "Ansible",
+          "Jenkins",
+          "AzureDevOps",
+          "GitHub Actions",
+          "AWS Lambda",
+          "Boto3 Automations"
+        ]
+      },
+      {
+        "name": "Web Development",
+        "items": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React.js",
+          "Next.js",
+          "Node.js",
+          "Express.js"
         ]
       },
       {
         "name": "Back-End",
         "items": [
           "Node.js",
-          "Express.js",
           "MongoDB",
-          "Firebase",
+          "PostgreSQL",
           "MySQL",
-          "PHP",
+          "Redis",
+          "Django",
+          "FastAPI",
+          "Flask",
           "REST API",
-          "GraphQL"
-        ]
-      },
-      {
-        "name": "Programming",
-        "items": [
-          "JavaScript",
-          "TypeScript",
-          "Python",
-          "C++",
-          "Java",
-          "R"
-        ]
-      },
-      {
-        "name": "Tech & Tools",
-        "items": [
-          "NPM",
-          "Bun",
-          "Git",
-          "GitHub",
-          "Vite.js",
-          "Socket.io",
-          "Netlify",
-          "Vercel",
-          "VS Code",
-          "Figma"
+          "Streamlit"
         ]
       },
       {
@@ -337,7 +386,7 @@
     ]
   },
   "github_projects": {
-    "title": "Open Source Projects"
+    "title": "Projects on GitHub"
   },
   "footer": {
     "show_social_links": true,
