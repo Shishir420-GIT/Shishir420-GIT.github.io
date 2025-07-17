@@ -149,6 +149,23 @@
     "title": "Featured Projects",
     "items": [
       {
+        "name": "Manzil café - A Virtual Space",
+        "date": "July 2025",
+        "description": [
+          "A virtual social café platform with multi-tenant café spaces, real-time chat, AI bartender integration, voice messaging, virtual ordering, and enterprise-grade security. Experience the future of social interaction in beautifully themed virtual environments.",
+          "Features: ",
+          "Chat rooms.",
+          "AI assistant/companion.",
+          "Pomodoro Focus room",
+          "Google Auth"
+        ],
+        "picture": "assets/projects/cafe-home.png",
+        "link": {
+          "url": "https://github.com/Shishir420-GIT/manzilcafe",
+          "title": "View Project"
+        }
+      },
+      {
         "name": "Gemini Based- Streamlined Mobile Devices Research",
         "date": "Dec 2024",
         "description": [
