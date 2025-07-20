@@ -726,6 +726,50 @@
             padding-left: 2rem;
         }
 
+        .experience-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .company-logo {
+            width: 80px;
+            height: 80px;
+            background: var(--bg-tertiary);
+            border: 2px solid var(--border-neon);
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-neon);
+        }
+
+        .company-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: brightness(1.2) contrast(1.1);
+            transition: all 0.3s ease;
+        }
+
+        .experience-card:hover .company-logo {
+            border-color: var(--primary-neon);
+            box-shadow: var(--shadow-neon-strong);
+            transform: scale(1.05);
+        }
+
+        .experience-card:hover .company-logo img {
+            filter: brightness(1.4) contrast(1.2);
+        }
+
+        .experience-details {
+            flex: 1;
+        }
+
         .company-name {
             font-family: var(--font-primary);
             color: var(--primary-neon);
@@ -972,6 +1016,17 @@
 
             .grid-2, .grid-3, .grid-4 {
                 grid-template-columns: 1fr;
+            }
+
+            .experience-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .company-logo {
+                width: 60px;
+                height: 60px;
             }
         }
 
@@ -1259,9 +1314,16 @@
             <h2 class="section-title">Professional Experience</h2>
             <div class="grid-2">
                 <div class="card experience-card">
-                    <h3 class="company-name">EY GDS</h3>
-                    <div class="role-title">Senior Technology Consultant II</div>
-                    <div class="experience-date">December 2024 - Present</div>
+                    <div class="experience-header">
+                        <div class="company-logo">
+                            <img src="assets/logos/ey-logo-black.png" alt="EY GDS Logo" loading="lazy">
+                        </div>
+                        <div class="experience-details">
+                            <h3 class="company-name">EY GDS</h3>
+                            <div class="role-title">Senior Technology Consultant II</div>
+                            <div class="experience-date">December 2024 - Present</div>
+                        </div>
+                    </div>
                     <ul class="responsibilities">
                         <li>Developed a Cyber AI Package to detect PII, prompt injection, and jailbreak attempts using a combination of Microsoft Presidio, custom ML models with 97% accuracy, and pattern-based logic.</li>
                         <li>Designed solution architecture for a Policy Assessment Engine that utilizes OpenAI APIs to evaluate compliance narratives and automate risk scoring planned to reduce human effort by 50%.</li>
@@ -1271,9 +1333,16 @@
                 </div>
 
                 <div class="card experience-card">
-                    <h3 class="company-name">Wipro Technologies</h3>
-                    <div class="role-title">Senior Python Developer</div>
-                    <div class="experience-date">September 2020 - Decemeber 2024</div>
+                    <div class="experience-header">
+                        <div class="company-logo">
+                            <img src="assets/logos/Wipro-Logo.png" alt="Wipro Technologies Logo" loading="lazy">
+                        </div>
+                        <div class="experience-details">
+                            <h3 class="company-name">Wipro Technologies</h3>
+                            <div class="role-title">Senior Python Developer</div>
+                            <div class="experience-date">September 2020 - December 2024</div>
+                        </div>
+                    </div>
                     <ul class="responsibilities">
                         <li>Built RAG-based KB article retrieval for multiple customers with Gemini and Claude 3 using Vertex AI and Amazon Bedrock respectively, utilized Spanner and MongoDB for storing Vector embeddings bringing down time of resolution by 30-40%.</li>
                         <li>Developed multiple Python solutions to fetch EC2 instances data using Lambda functions and fetch WAF reports data from S3 buckets with boto3, worked with Lambda, ECR, ECS, RDS, DynamoDB, Cloud Formation (CDK), AWS CLI etc.</li>
