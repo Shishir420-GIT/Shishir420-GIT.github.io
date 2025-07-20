@@ -193,84 +193,27 @@
             50% { opacity: 0.5; }
         }
 
-        /* Navigation */
-        .navbar {
+        /* Top Logo Only */
+        .top-logo {
             position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(10, 10, 10, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border-neon);
+            top: 2rem;
+            left: 2rem;
             z-index: 1000;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 20px rgba(0, 255, 255, 0.2);
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
             font-family: var(--font-primary);
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--primary-neon);
             text-shadow: 0 0 10px var(--primary-neon);
             animation: glow 2s ease-in-out infinite alternate;
+            background: rgba(10, 10, 10, 0.8);
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-neon);
+            backdrop-filter: blur(10px);
         }
 
         @keyframes glow {
             from { text-shadow: 0 0 10px var(--primary-neon); }
             to { text-shadow: 0 0 20px var(--primary-neon), 0 0 30px var(--primary-neon); }
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-secondary);
-            font-weight: 500;
-            font-family: var(--font-primary);
-            transition: all 0.3s ease;
-            position: relative;
-            padding: 0.5rem 1rem;
-            border: 1px solid transparent;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-neon);
-            border-color: var(--primary-neon);
-            box-shadow: var(--shadow-neon);
-            text-shadow: 0 0 10px var(--primary-neon);
-        }
-
-        .theme-toggle {
-            background: var(--bg-card);
-            border: 2px solid var(--border-neon);
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary-neon);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-neon);
-        }
-
-        .theme-toggle:hover {
-            box-shadow: var(--shadow-neon-strong);
-            transform: scale(1.1);
         }
 
         /* Section Styling */
@@ -989,8 +932,11 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
+            .top-logo {
+                font-size: 1.2rem;
+                top: 1rem;
+                left: 1rem;
+                padding: 0.4rem 0.8rem;
             }
 
             .hero h1 {
@@ -1031,8 +977,9 @@
         }
 
         @media (max-width: 480px) {
-            .nav-container {
-                padding: 1rem;
+            .top-logo {
+                font-size: 1rem;
+                padding: 0.3rem 0.6rem;
             }
 
             .hero-content {
@@ -1059,24 +1006,8 @@
     <div class="cursor" id="cursor"></div>
     <div class="cursor-follower" id="cursor-follower"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="logo">SHISHIR.EXE</div>
-            <ul class="nav-links">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#achievements">ACHIEVEMENTS</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#experience">EXPERIENCE</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#github-projects">GITHUB</a></li>
-            </ul>
-            <button class="theme-toggle" id="theme-toggle">
-                <i class="fas fa-power-off"></i>
-            </button>
-        </div>
-    </nav>
+    <!-- Top Logo -->
+    <div class="top-logo">SHISHIR.EXE</div>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -1626,16 +1557,16 @@
             });
         });
 
-        // Navbar scroll effect
-        const navbar = document.getElementById('navbar');
+        // Top logo scroll effect
+        const topLogo = document.querySelector('.top-logo');
         
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
-                navbar.style.background = 'rgba(10, 10, 10, 0.98)';
-                navbar.style.boxShadow = '0 2px 20px rgba(0, 255, 255, 0.4)';
+                topLogo.style.background = 'rgba(10, 10, 10, 0.95)';
+                topLogo.style.boxShadow = '0 0 20px rgba(0, 255, 255, 0.4)';
             } else {
-                navbar.style.background = 'rgba(10, 10, 10, 0.95)';
-                navbar.style.boxShadow = '0 2px 20px rgba(0, 255, 255, 0.2)';
+                topLogo.style.background = 'rgba(10, 10, 10, 0.8)';
+                topLogo.style.boxShadow = 'none';
             }
         });
 
