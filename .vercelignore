@@ -1,0 +1,14 @@
+# Vercel ignore file for enhanced portfolio
+
+# Development files
+.git/
+.gitignore
+
+# Documentation (keep them but don't deploy)
+README.md
+LICENSE
+
+# Only deploy essential files for enhanced version
+# - index.html (enhanced cyberpunk version)
+# - vercel.json (deployment config)
+# - assets/ (logos and project images)

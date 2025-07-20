@@ -3,199 +3,1588 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <title>Shishir Srivastav - AI/ML Engineer & Tech Content Creator</title>
+    <meta name="description" content="Senior Python Developer with almost 5 years of experience, I simplify complex tasks and believe that 'if it is structured, it can be automated'. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?">
+    <meta name="keywords" content="Python, AI, ML, Multi Cloud - AWS • GCP • Azure • OCI, Expertise in Generative AI, Automation, Scripting, DevOps, Designing, Troubleshooting, software engineer">
+    <meta name="author" content="Shishir Srivastav">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
+    <meta property="og:url" content="https://Shishir420-GIT.github.io">
+    <meta property="og:title" content="Shishir Srivastav - AI/ML Engineer & Tech Content Creator">
+    <meta property="og:description" content="Senior Python Developer with almost 5 years of experience, I simplify complex tasks and believe that 'if it is structured, it can be automated'.">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/Shishir420-GIT">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="">
-    <meta property="twitter:url" content="">
-    <meta property="twitter:title" content="">
-    <meta property="twitter:description" content="">
-    <meta property="twitter:image" content="">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://Shishir420-GIT.github.io">
+    <meta property="twitter:title" content="Shishir Srivastav - AI/ML Engineer & Tech Content Creator">
+    <meta property="twitter:description" content="Senior Python Developer with almost 5 years of experience, I simplify complex tasks and believe that 'if it is structured, it can be automated'.">
+    <meta property="twitter:image" content="https://avatars.githubusercontent.com/Shishir420-GIT">
 
-    <title></title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><circle cx='12' cy='12' r='10'/><line x1='2' y1='12' x2='22' y2='12'/><path d='M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z'/></svg>">
-    <link rel="preload" href="css/main.css" as="style">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://avatars.githubusercontent.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Preload for better performance -->
-    <link rel="preload" href="js/fluid-background.js" as="script">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "",
-      "url": "",
-      "sameAs": [],
-      "jobTitle": "",
-      "worksFor": {
-        "@type": "Organization",
-        "name": ""
-      }
-    }
-    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Cyberpunk Color Palette */
+            --primary-neon: #00ffff;
+            --secondary-neon: #ff0080;
+            --accent-neon: #00ff41;
+            --warning-neon: #ffff00;
+            --danger-neon: #ff073a;
+            
+            /* Dark Theme Colors */
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #111111;
+            --bg-tertiary: #1a1a1a;
+            --bg-card: #151515;
+            --bg-overlay: rgba(0, 0, 0, 0.9);
+            
+            /* Text Colors */
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0b0;
+            --text-muted: #666666;
+            --text-neon: #00ffff;
+            
+            /* Border Colors */
+            --border-primary: #333333;
+            --border-neon: #00ffff;
+            --border-glow: rgba(0, 255, 255, 0.5);
+            
+            /* Shadows */
+            --shadow-neon: 0 0 20px rgba(0, 255, 255, 0.3);
+            --shadow-neon-strong: 0 0 30px rgba(0, 255, 255, 0.6);
+            --shadow-dark: 0 4px 20px rgba(0, 0, 0, 0.5);
+            
+            /* Fonts */
+            --font-primary: 'Orbitron', monospace;
+            --font-secondary: 'Rajdhani', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-secondary);
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+            overflow-x: hidden;
+            cursor: none;
+            position: relative;
+        }
+
+        /* Matrix Background Effect */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 0, 128, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(0, 255, 65, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Custom Cursor */
+        .cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--primary-neon);
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform 0.1s ease;
+            box-shadow: var(--shadow-neon);
+        }
+
+        .cursor-follower {
+            position: fixed;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid var(--primary-neon);
+            pointer-events: none;
+            z-index: 9998;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-neon);
+        }
+
+        /* Color Splash Effect - Cyberpunk Colors */
+        .color-splash {
+            position: fixed;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1000;
+            animation: cyberpunk-splash 1s ease-out forwards;
+        }
+
+        @keyframes cyberpunk-splash {
+            0% {
+                transform: scale(0);
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 0.4;
+            }
+            100% {
+                transform: scale(3);
+                opacity: 0;
+            }
+        }
+
+        /* Loading Screen */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loading-spinner {
+            width: 60px;
+            height: 60px;
+            border: 3px solid var(--border-primary);
+            border-top: 3px solid var(--primary-neon);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            box-shadow: var(--shadow-neon);
+        }
+
+        .loading-text {
+            margin-top: 2rem;
+            font-family: var(--font-primary);
+            color: var(--primary-neon);
+            font-size: 1.2rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-neon);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 20px rgba(0, 255, 255, 0.2);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-primary);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-neon);
+            text-shadow: 0 0 10px var(--primary-neon);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px var(--primary-neon); }
+            to { text-shadow: 0 0 20px var(--primary-neon), 0 0 30px var(--primary-neon); }
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-family: var(--font-primary);
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 1rem;
+            border: 1px solid transparent;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-neon);
+            border-color: var(--primary-neon);
+            box-shadow: var(--shadow-neon);
+            text-shadow: 0 0 10px var(--primary-neon);
+        }
+
+        .theme-toggle {
+            background: var(--bg-card);
+            border: 2px solid var(--border-neon);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-neon);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-neon);
+        }
+
+        .theme-toggle:hover {
+            box-shadow: var(--shadow-neon-strong);
+            transform: scale(1.1);
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-family: var(--font-primary);
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-neon);
+            text-align: center;
+            margin-bottom: 4rem;
+            text-shadow: 0 0 20px var(--primary-neon);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: 
+                linear-gradient(45deg, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+                linear-gradient(-45deg, rgba(255, 0, 128, 0.1) 0%, transparent 50%),
+                var(--bg-primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(0,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+
+        .hero-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            border: 3px solid var(--primary-neon);
+            box-shadow: var(--shadow-neon-strong);
+            animation: float 6s ease-in-out infinite;
+            filter: brightness(1.2) contrast(1.1);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .hero h1 {
+            font-family: var(--font-primary);
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            animation: slideInUp 1s ease-out;
+            text-shadow: 0 0 20px var(--primary-neon);
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            color: var(--primary-neon);
+            margin-bottom: 2rem;
+            animation: slideInUp 1s ease-out 0.2s both;
+            font-family: var(--font-primary);
+            text-shadow: 0 0 10px var(--primary-neon);
+        }
+
+        .hero .description {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            line-height: 1.8;
+            animation: slideInUp 1s ease-out 0.4s both;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: slideInUp 1s ease-out 0.6s both;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 0;
+            text-decoration: none;
+            font-weight: 600;
+            font-family: var(--font-primary);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            border: 2px solid;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: transparent;
+            color: var(--primary-neon);
+            border-color: var(--primary-neon);
+            box-shadow: var(--shadow-neon);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-neon);
+            color: var(--bg-primary);
+            box-shadow: var(--shadow-neon-strong);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--secondary-neon);
+            border-color: var(--secondary-neon);
+            box-shadow: 0 0 20px rgba(255, 0, 128, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: var(--secondary-neon);
+            color: var(--bg-primary);
+            box-shadow: 0 0 30px rgba(255, 0, 128, 0.6);
+            transform: translateY(-2px);
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            animation: slideInUp 1s ease-out 0.8s both;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border: 2px solid var(--border-neon);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-neon);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            background: var(--bg-card);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-neon);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .social-link:hover::before {
+            transform: translateY(0);
+        }
+
+        .social-link:hover {
+            color: var(--bg-primary);
+            box-shadow: var(--shadow-neon-strong);
+            transform: translateY(-3px);
+        }
+
+        .social-link i {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-neon);
+            border-bottom: 1px solid var(--border-neon);
+        }
+
+        .about-content {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Grid Layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Card Styling */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-neon);
+            padding: 2rem;
+            position: relative;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-neon), var(--secondary-neon));
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-neon);
+            border-color: var(--primary-neon);
+        }
+
+        .card h3 {
+            font-family: var(--font-primary);
+            color: var(--primary-neon);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-neon);
+        }
+
+        /* Achievement Cards */
+        .achievement-card {
+            text-align: center;
+        }
+
+        .achievement-stat {
+            font-family: var(--font-primary);
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--warning-neon);
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 10px var(--warning-neon);
+        }
+
+        .achievement-title {
+            font-family: var(--font-primary);
+            color: var(--primary-neon);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        .achievement-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .achievement-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-neon);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: var(--font-primary);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .achievement-link:hover {
+            color: var(--primary-neon);
+            text-shadow: 0 0 10px var(--primary-neon);
+        }
+
+        /* Project Cards */
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .project-date {
+            color: var(--accent-neon);
+            font-family: var(--font-primary);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+            line-height: 1.6;
+        }
+
+        .project-description ul {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        .project-description li {
+            margin-bottom: 0.5rem;
+            color: var(--text-muted);
+        }
+
+        .project-link {
+            margin-top: auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-neon);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: var(--font-primary);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .project-link:hover {
+            color: var(--primary-neon);
+            text-shadow: 0 0 10px var(--primary-neon);
+        }
+
+        /* Experience Cards */
+        .experience-card {
+            border-left: 4px solid var(--accent-neon);
+            padding-left: 2rem;
+        }
+
+        .company-name {
+            font-family: var(--font-primary);
+            color: var(--primary-neon);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .role-title {
+            color: var(--accent-neon);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .experience-date {
+            color: var(--warning-neon);
+            font-family: var(--font-primary);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .responsibilities {
+            list-style: none;
+            padding: 0;
+        }
+
+        .responsibilities li {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .responsibilities li::before {
+            content: '▶';
+            color: var(--accent-neon);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Skills Section */
+        .skills-category {
+            margin-bottom: 3rem;
+        }
+
+        .skills-category h4 {
+            font-family: var(--font-primary);
+            color: var(--secondary-neon);
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill-item, .skill-link {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-primary);
+            padding: 0.75rem 1.5rem;
+            font-family: var(--font-primary);
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-item::before, .skill-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, var(--primary-neon), transparent);
+            opacity: 0.1;
+            transition: left 0.5s;
+        }
+
+        .skill-item:hover::before, .skill-link:hover::before {
+            left: 100%;
+        }
+
+        .skill-item:hover, .skill-link:hover {
+            border-color: var(--primary-neon);
+            color: var(--primary-neon);
+            box-shadow: var(--shadow-neon);
+            transform: translateY(-2px);
+        }
+
+        /* Matrix rain effect */
+        .matrix-rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        .matrix-column {
+            position: absolute;
+            top: -100%;
+            font-family: var(--font-primary);
+            font-size: 14px;
+            color: var(--primary-neon);
+            animation: matrix-fall linear infinite;
+        }
+
+        @keyframes matrix-fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-secondary);
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid var(--border-neon);
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-neon), var(--secondary-neon), var(--accent-neon), var(--warning-neon));
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .footer-tagline {
+            font-family: var(--font-primary);
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: var(--bg-card);
+            color: var(--primary-neon);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-neon);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-social a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-neon);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .footer-social a:hover::before {
+            transform: translateY(0);
+        }
+
+        .footer-social a:hover {
+            color: var(--bg-primary);
+            box-shadow: var(--shadow-neon);
+            transform: translateY(-3px);
+        }
+
+        .footer-social a i {
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-built-with {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-family: var(--font-primary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .social-links {
+                flex-wrap: wrap;
+            }
+
+            .grid-2, .grid-3, .grid-4 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 1rem;
+            }
+
+            .hero-content {
+                padding: 0 1rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Loading Screen -->
-    <div id="loading-screen" role="progressbar" aria-label="Loading portfolio">
+    <div class="loading" id="loading">
         <div class="loading-spinner"></div>
         <p class="loading-text">git init...</p>
     </div>
 
-    <!-- Theme switcher -->
-    <button class="theme-switch" aria-label="Toggle dark/light theme">
-        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/>
-            <line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/>
-            <line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
-        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>
-    </button>
+    <!-- Matrix Rain Effect -->
+    <div class="matrix-rain" id="matrix-rain"></div>
 
-    <div class="container content-hidden" id="main-content">
-        <header>
-            <img src="" alt="Profile picture" class="profile-img" loading="eager">
-            <h1></h1>
-            <p class="tagline"></p>
-            <div class="social-links" role="navigation" aria-label="Social links"></div>
-        </header>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
 
-        <section class="about" aria-label="About me"></section>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">SHISHIR.EXE</div>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#achievements">ACHIEVEMENTS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#github-projects">GITHUB</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-power-off"></i>
+            </button>
+        </div>
+    </nav>
 
-        <section class="achievements" aria-label="Achievements">
-            <h2></h2>
-            <div class="achievements-grid"></div>
-        </section>
-
-        <section class="projects" aria-label="Latest projects">
-            <h2></h2>
-        </section>
-        
-        <section class="experience" aria-label="Professional experience">
-            <h2></h2>
-        </section>
-
-        <section class="projects-on-github" aria-label="GitHub projects">
-            <h2></h2>
-            <div id="projects" class="projects-grid">
-                <div class="loading" role="status">Loading projects...</div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="https://avatars.githubusercontent.com/Shishir420-GIT" alt="Shishir Srivastav" class="hero-avatar">
+            <h1>SHISHIR SRIVASTAV</h1>
+            <p class="tagline">Senior AI/ML Engineer & Tech Content Creator</p>
+            <p class="description">
+                > INITIALIZING SYSTEM...<br>
+                > LOADING AI PROTOCOLS...<br>
+                > Senior Developer with 5+ years experience in automation and AI<br>
+                > "If it's structured, it can be automated" - Core Philosophy<br>
+                > Ready to build the next generation of AI applications
+            </p>
+            <div class="cta-buttons">
+                <a href="https://github.com/Shishir420-GIT" class="btn btn-primary" target="_blank">
+                    <i class="fas fa-terminal"></i>
+                    VIEW PROJECTS
+                </a>
+                <a href="https://www.credly.com/users/shishir-srivastav-who" class="btn btn-secondary" target="_blank">
+                    <i class="fas fa-certificate"></i>
+                    VIEW CERTIFICATIONS
+                </a>
             </div>
-        </section>
+            <div class="social-links">
+                <a href="https://github.com/Shishir420-GIT" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=shishir-srivastav" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/shishir_who" class="social-link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/programmatic.ly" class="social-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCCZiCzPtg9pmDwChJ4ROIpA?sub_confirmation=1" class="social-link" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://shishirsrivastav.hashnode.dev" class="social-link" target="_blank">
+                    <i class="fas fa-blog"></i>
+                </a>
+                <a href="https://linktr.ee/shishirsrivastav" class="social-link" target="_blank">
+                    <i class="fas fa-link"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <section class="skills" aria-label="Skills">
-            <h2></h2>
-            <div class="skills-grid"></div>
-        </section>
-    </div>
-    
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>👋 Welcome! I'm Senior Developer with almost 5 years of experience, I simplify complex tasks and believe that 'if it is structured, it can be automated'. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section" id="achievements">
+        <div class="container">
+            <h2 class="section-title">Key Highlights</h2>
+            <div class="grid-3">
+                <div class="card achievement-card">
+                    <div class="card-icon">📹</div>
+                    <div class="achievement-stat">Some Subscribers</div>
+                    <h3 class="achievement-title">YouTube Channel</h3>
+                    <p class="achievement-description">Created a YouTube channel for sharing tutorials and insights on AI/ML, cloud technologies, and software development best practices.</p>
+                    <a href="https://www.youtube.com/channel/UCCZiCzPtg9pmDwChJ4ROIpA?sub_confirmation=1" class="achievement-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Watch Videos
+                    </a>
+                </div>
+
+                <div class="card achievement-card">
+                    <div class="card-icon">🌐</div>
+                    <div class="achievement-stat">5K+</div>
+                    <h3 class="achievement-title">Professional Network</h3>
+                    <p class="achievement-description">Built a strong professional network of 5,000+ connections, actively sharing knowledge and insights about AI/ML, cloud technologies, and career development.</p>
+                    <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=shishir-srivastav" class="achievement-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Connect on LinkedIn
+                    </a>
+                </div>
+
+                <div class="card achievement-card">
+                    <div class="card-icon">🏆</div>
+                    <div class="achievement-stat">Top 1%</div>
+                    <h3 class="achievement-title">Top 1% Mentor</h3>
+                    <p class="achievement-description">Ranked in the top 1% of mentors on Topmate, helping developers and professionals grow in their AI/ML careers with personalized guidance and industry insights.</p>
+                    <a href="https://topmate.io/shishir_srivastav" class="achievement-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Profile
+                    </a>
+                </div>
+
+                <div class="card achievement-card">
+                    <div class="card-icon">📸</div>
+                    <div class="achievement-stat">Some Followers</div>
+                    <h3 class="achievement-title">Instagram Community</h3>
+                    <p class="achievement-description">Building an engaged community on Instagram, sharing insights on AI/ML, cloud technologies, and personal development.</p>
+                    <a href="https://www.instagram.com/programmatic.ly" class="achievement-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Connect on Instagram
+                    </a>
+                </div>
+
+                <div class="card achievement-card">
+                    <div class="card-icon">📝</div>
+                    <div class="achievement-stat">Some Followers</div>
+                    <h3 class="achievement-title">Hashnode Community</h3>
+                    <p class="achievement-description">Growing a community on Hashnode, sharing articles and tutorials on AI/ML, cloud technologies, and software development.</p>
+                    <a href="https://shishirsrivastav.hashnode.dev" class="achievement-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Read Articles
+                    </a>
+                </div>
+
+                <div class="card achievement-card">
+                    <div class="card-icon">🎓</div>
+                    <div class="achievement-stat">10+</div>
+                    <h3 class="achievement-title">Industry Certifications</h3>
+                    <p class="achievement-description">Earned 10+ professional certifications from AWS, Oracle, Microsoft, and other leading technology companies, demonstrating expertise across multiple cloud platforms.</p>
+                    <a href="https://www.credly.com/users/shishir-srivastav-who" class="achievement-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Certifications
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="grid-2">
+                <div class="card project-card">
+                    <div class="project-date">July 2025</div>
+                    <h3>Manzil café - A Virtual Space</h3>
+                    <div class="project-description">
+                        <p>A virtual social café platform with multi-tenant café spaces, real-time chat, AI bartender integration, voice messaging, virtual ordering, and enterprise-grade security. Experience the future of social interaction in beautifully themed virtual environments.</p>
+                        <p><strong>Features:</strong></p>
+                        <ul>
+                            <li>Chat rooms</li>
+                            <li>AI assistant/companion</li>
+                            <li>Pomodoro Focus room</li>
+                            <li>Google Auth</li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/Shishir420-GIT/manzilcafe" class="project-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Project
+                    </a>
+                </div>
+
+                <div class="card project-card">
+                    <div class="project-date">July 2024</div>
+                    <h3>Automation Generator Tool</h3>
+                    <div class="project-description">
+                        <p>This application allows users to upload an SOP based pdf, which lets them create an Automation around it, by providing a block daigram (text based), a script and list of pre-requisites to run the script, The AI being utilized here is Gemini-pro.</p>
+                        <p><strong>Features:</strong></p>
+                        <ul>
+                            <li>Queries MongoDB for existing solutions</li>
+                            <li>Upload SOP based PDF & Summarising of the PDF</li>
+                            <li>AI-powered script, flow and pre-requisite generation</li>
+                            <li>Option to regenerate review code and regenerate it</li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/Shishir420-GIT/Automation-Generator" class="project-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Project
+                    </a>
+                </div>
+
+                <div class="card project-card">
+                    <div class="project-date">June 2025</div>
+                    <h3>Automated Data filling into CRM Tool</h3>
+                    <div class="project-description">
+                        <p>A modern full-stack application that uses AI to extract contact, company, and deal information from meeting summaries. Built with React frontend and FastAPI backend.</p>
+                        <p><strong>Features:</strong></p>
+                        <ul>
+                            <li>AI-Powered Extraction: Uses OpenAI GPT models to extract structured CRM data</li>
+                            <li>PII Detection: Identifies and extracts personally identifiable information</li>
+                            <li>Data Persistence: MongoDB Atlas integration for storing leads</li>
+                            <li>Export Capabilities: Download data as CSV or JSON</li>
+                            <li>Dashboard Analytics: View statistics and insights</li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/Shishir420-GIT/Automated-Data-Filler-Agent" class="project-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Project
+                    </a>
+                </div>
+
+                <div class="card project-card">
+                    <div class="project-date">Dec 2024</div>
+                    <h3>Gemini Based- Streamlined Mobile Devices Research</h3>
+                    <div class="project-description">
+                        <p>This application uses Streamlit to compare YouTube videos by fetching transcripts, summarizing content, and generating comparison tables. It leverages Google's Gemini AI for content generation.</p>
+                        <p><strong>Features:</strong></p>
+                        <ul>
+                            <li>Extract transcripts from YouTube videos</li>
+                            <li>Summarize video content using Gemini AI</li>
+                            <li>Generate comparison tables in HTML, CSV, and PDF formats</li>
+                            <li>Download comparison results</li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/Shishir420-GIT/BnB-Hack-A-Thon" class="project-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="grid-2">
+                <div class="card experience-card">
+                    <h3 class="company-name">EY GDS</h3>
+                    <div class="role-title">Senior Technology Consultant II</div>
+                    <div class="experience-date">December 2024 - Present</div>
+                    <ul class="responsibilities">
+                        <li>Developed a Cyber AI Package to detect PII, prompt injection, and jailbreak attempts using a combination of Microsoft Presidio, custom ML models with 97% accuracy, and pattern-based logic.</li>
+                        <li>Designed solution architecture for a Policy Assessment Engine that utilizes OpenAI APIs to evaluate compliance narratives and automate risk scoring planned to reduce human effort by 50%.</li>
+                        <li>Built an Agentic AI system to analyse ZScaler activity logs and generate real-time alerts based on user behaviour, enhancing cloud security posture monitoring.</li>
+                        <li>Automated scripts for 20,000+ devices, utilizing CrowdStrike API and a combination of Python, AWS Lambda, EventBridge, and task schedulers.</li>
+                    </ul>
+                </div>
+
+                <div class="card experience-card">
+                    <h3 class="company-name">Wipro Technologies</h3>
+                    <div class="role-title">Senior Python Developer</div>
+                    <div class="experience-date">September 2020 - Decemeber 2024</div>
+                    <ul class="responsibilities">
+                        <li>Built RAG-based KB article retrieval for multiple customers with Gemini and Claude 3 using Vertex AI and Amazon Bedrock respectively, utilized Spanner and MongoDB for storing Vector embeddings bringing down time of resolution by 30-40%.</li>
+                        <li>Developed multiple Python solutions to fetch EC2 instances data using Lambda functions and fetch WAF reports data from S3 buckets with boto3, worked with Lambda, ECR, ECS, RDS, DynamoDB, Cloud Formation (CDK), AWS CLI etc.</li>
+                        <li>Implemented multiple generative AI (Gen AI) based solutions, such as Chat Interface using Lang Chain, added query analysis for improving search quality for phrasing to LLMs while maintaining chat history and meeting notes summary generator.</li>
+                        <li>Ensured consistent results using Python, Terraform and PowerShell by implementing across multiple clouds such as AWS and Azure for managing servers, creating infrastructures and deploying solutions, reducing deployment time by in range of 40-50%.</li>
+                        <li>As a senior developer provided feedback, mentored and guided colleagues and new joiners for smooth transition in projects, and authored white papers and SOPs for simplifying the DevOps process.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="grid-2">
+                <div class="skills-category">
+                    <h4>Programming Languages</h4>
+                    <div class="skills-grid">
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">R</div>
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">TypeScript</div>
+                        <div class="skill-item">PowerShell</div>
+                        <div class="skill-item">Shell/Bash Scripting</div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h4>AI & Machine Learning</h4>
+                    <div class="skills-grid">
+                        <div class="skill-item">AI Security</div>
+                        <div class="skill-item">Generative AI</div>
+                        <div class="skill-item">Natural Language Processing (NLP)</div>
+                        <div class="skill-item">Machine Learning</div>
+                        <div class="skill-item">Deep Learning</div>
+                        <div class="skill-item">Computer Vision</div>
+                        <div class="skill-item">AI Agents</div>
+                        <div class="skill-item">Function Calling</div>
+                        <div class="skill-item">RAG (Retrieval Augmented Generation)</div>
+                        <div class="skill-item">LangChain</div>
+                        <div class="skill-item">LangGraph</div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h4>Cloud Platforms</h4>
+                    <div class="skills-grid">
+                        <div class="skill-item">AWS</div>
+                        <div class="skill-item">Google Cloud Platform (GCP)</div>
+                        <div class="skill-item">Microsoft Azure</div>
+                        <div class="skill-item">Oracle Cloud Infrastructure (OCI)</div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h4>DevOps & Automation</h4>
+                    <div class="skills-grid">
+                        <div class="skill-item">CI/CD</div>
+                        <div class="skill-item">Infrastructure as Code (IaC)</div>
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">Kubernetes</div>
+                        <div class="skill-item">Terraform</div>
+                        <div class="skill-item">Ansible</div>
+                        <div class="skill-item">Jenkins</div>
+                        <div class="skill-item">AzureDevOps</div>
+                        <div class="skill-item">GitHub Actions</div>
+                        <div class="skill-item">AWS Lambda</div>
+                        <div class="skill-item">Boto3 Automations</div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h4>Web Development</h4>
+                    <div class="skills-grid">
+                        <div class="skill-item">HTML</div>
+                        <div class="skill-item">CSS</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">React.js</div>
+                        <div class="skill-item">Next.js</div>
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">Express.js</div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h4>Back-End</h4>
+                    <div class="skills-grid">
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">MongoDB</div>
+                        <div class="skill-item">PostgreSQL</div>
+                        <div class="skill-item">MySQL</div>
+                        <div class="skill-item">Redis</div>
+                        <div class="skill-item">Django</div>
+                        <div class="skill-item">FastAPI</div>
+                        <div class="skill-item">Flask</div>
+                        <div class="skill-item">REST API</div>
+                        <div class="skill-item">Streamlit</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h4>Certifications & Learning</h4>
+                <div class="skills-grid">
+                    <a href="https://www.credly.com/users/shishir-srivastav-who" class="skill-link" target="_blank">View My Credly Profile</a>
+                    <a href="https://www.credly.com/badges/b8badd21-2d0c-45c6-9c31-fb2a713595dc/public_url" class="skill-link" target="_blank">AWS Certified Cloud Practitioner</a>
+                    <a href="https://www.credly.com/badges/3c883589-ee1e-432c-b405-b6141ff17bf4/public_url" class="skill-link" target="_blank">AWS Certified AI Practitioner</a>
+                    <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=34452D7DA32B6ACE94DD86836D9FFC7F3D28249CB2F900663E1A9BCD7D25CB2C" class="skill-link" target="_blank">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</a>
+                    <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=B7157985339B6F1CBF966978C8573A2C69C396819ED482926EF2CA6F98E62872" class="skill-link" target="_blank">Oracle Cloud Infrastructure 2024 Generative AI Certified Professional</a>
+                    <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=B7157985339B6F1CBF966978C8573A2C69C396819ED482926EF2CA6F98E62872" class="skill-link" target="_blank">Microsoft Certified: Azure Fundamentals</a>
+                    <a href="https://www.credly.com/badges/ec689c15-91ba-4cdb-947e-dcf2adfb5806/public_url" class="skill-link" target="_blank">Red Hat Enterprise Linux Automation with Ansible (RH294) - Ver. 9.0</a>
+                    <a href="https://www.credly.com/badges/89f7608b-b908-48c5-9b65-8765a7687a07/public_url" class="skill-link" target="_blank">Red Hat System Administration II (RH134) - Ver. 9.0</a>
+                    <a href="https://www.credly.com/badges/12b6ea7b-819e-4617-8052-a715374752a2/public_url" class="skill-link" target="_blank">Building AI Agents with MongoDB</a>
+                    <a href="https://www.credly.com/badges/2f86bbf4-5d5b-4a69-8675-d6f57612a93f/public_url" class="skill-link" target="_blank">Building AI-Powered Search with MongoDB Vector Search</a>
+                    <a href="https://www.credly.com/badges/887765e6-4058-43cc-9853-d2fbe2bbe7f4/public_url" class="skill-link" target="_blank">Building RAG Apps Using MongoDB</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Projects Section -->
+    <section class="section" id="github-projects">
+        <div class="container">
+            <h2 class="section-title">Projects on GitHub</h2>
+            <div class="card" style="text-align: center; padding: 3rem;">
+                <div class="card-icon">
+                    <i class="fab fa-github" style="font-size: 4rem; color: var(--primary-neon);"></i>
+                </div>
+                <h3>Explore My GitHub</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.2rem;">
+                    Discover my latest projects, contributions, and open-source work on GitHub. 
+                    From AI/ML applications to automation tools and web development projects.
+                </p>
+                <a href="https://github.com/Shishir420-GIT" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-github"></i>
+                    View GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-tagline"></div>
-            <div class="footer-social"></div>
-            <div class="footer-bottom">
-                <div class="footer-built-with"></div>
+            <p class="footer-tagline">Let's connect and build something amazing together!</p>
+            <div class="footer-social">
+                <a href="https://github.com/Shishir420-GIT" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=shishir-srivastav" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/shishir_who" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/programmatic.ly" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCCZiCzPtg9pmDwChJ4ROIpA?sub_confirmation=1" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://shishirsrivastav.hashnode.dev" target="_blank">
+                    <i class="fas fa-blog"></i>
+                </a>
+                <a href="https://linktr.ee/shishirsrivastav" target="_blank">
+                    <i class="fas fa-link"></i>
+                </a>
             </div>
+            <p class="footer-built-with">Built with ❤️ using vanilla JavaScript • Open Source • CYBERPUNK ENHANCED VERSION</p>
         </div>
     </footer>
-    
-    <!-- Social Icons Templates -->
-    <template id="linkedin-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-            <rect x="2" y="9" width="4" height="12"></rect>
-            <circle cx="4" cy="4" r="2"></circle>
-        </svg>
-    </template>
-    <template id="github-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-        </svg>
-    </template>
-    <template id="twitter-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-        </svg>
-    </template>
-    <template id="instagram-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-        </svg>
-    </template>
-    <template id="youtube-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
-            <polygon points="9.75,15.02 15.5,11.75 9.75,8.48"></polygon>
-        </svg>
-    </template>
-    <template id="website-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="2" y1="12" x2="22" y2="12"></line>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path>
-        </svg>
-    </template>
-    <template id="email-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-            <polyline points="22,6 12,13 2,6"></polyline>
-        </svg>
-    </template>
-    <template id="medium-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 12m-10 0a10 10 0 1 0 20 0a10 10 0 1 0 -20 0"></path>
-            <path d="M8 12l6 -6l6 6l-6 6z"></path>
-        </svg>
-    </template>
-    <template id="discord-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M8.5 6.5a6.5 6.5 0 1 1-3 12.28M8.5 6.5a6.5 6.5 0 0 1 3 12.28M8.5 6.5L12 13l3.5-6.5M12 13v8"></path>
-        </svg>
-    </template>
-    <template id="code-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <polyline points="16,18 22,12 16,6"></polyline>
-            <polyline points="8,6 2,12 8,18"></polyline>
-        </svg>
-    </template>
-    <template id="hashnode-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-            <path d="M2 17l10 5 10-5"></path>
-            <path d="M2 12l10 5 10-5"></path>
-        </svg>
-    </template>
-    <template id="topmate-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-            <circle cx="12" cy="7" r="4"></circle>
-        </svg>
-    </template>
-    <template id="credly-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-        </svg>
-    </template>
-    
-    <script type="module" src="js/main.js"></script>
+
+    <script>
+        // Loading screen
+        window.addEventListener('load', () => {
+            const loading = document.getElementById('loading');
+            setTimeout(() => {
+                loading.classList.add('hidden');
+            }, 2000);
+        });
+
+        // Matrix rain effect with Hindi characters
+        function createMatrixRain() {
+            const matrixContainer = document.getElementById('matrix-rain');
+            const hindiCharacters = 'अआइईउऊऋएऐओऔकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह01';
+            
+            for (let i = 0; i < 50; i++) {
+                const column = document.createElement('div');
+                column.className = 'matrix-column';
+                column.style.left = Math.random() * 100 + '%';
+                column.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                column.style.animationDelay = Math.random() * 2 + 's';
+                
+                let text = '';
+                for (let j = 0; j < 20; j++) {
+                    text += hindiCharacters[Math.floor(Math.random() * hindiCharacters.length)] + '<br>';
+                }
+                column.innerHTML = text;
+                
+                matrixContainer.appendChild(column);
+                
+                setTimeout(() => {
+                    column.remove();
+                }, 5000);
+            }
+        }
+
+        // Start matrix rain
+        setInterval(createMatrixRain, 1000);
+
+        // Custom cursor
+        const cursor = document.getElementById('cursor');
+        const cursorFollower = document.getElementById('cursor-follower');
+        let mouseX = 0, mouseY = 0;
+        let followerX = 0, followerY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            
+            cursor.style.left = mouseX - 10 + 'px';
+            cursor.style.top = mouseY - 10 + 'px';
+            
+            // Cyberpunk color splash effect
+            createCyberpunkSplash(mouseX, mouseY);
+        });
+
+        function animateFollower() {
+            followerX += (mouseX - followerX) * 0.1;
+            followerY += (mouseY - followerY) * 0.1;
+            
+            cursorFollower.style.left = followerX - 20 + 'px';
+            cursorFollower.style.top = followerY - 20 + 'px';
+            
+            requestAnimationFrame(animateFollower);
+        }
+        animateFollower();
+
+        // Cyberpunk color splash effect
+        const cyberpunkColors = ['#00ffff', '#ff0080', '#00ff41', '#ffff00', '#ff073a'];
+        let lastSplashTime = 0;
+
+        function createCyberpunkSplash(x, y) {
+            const now = Date.now();
+            if (now - lastSplashTime < 150) return;
+            lastSplashTime = now;
+
+            const splash = document.createElement('div');
+            splash.className = 'color-splash';
+            splash.style.left = x - 15 + 'px';
+            splash.style.top = y - 15 + 'px';
+            splash.style.width = '30px';
+            splash.style.height = '30px';
+            splash.style.background = cyberpunkColors[Math.floor(Math.random() * cyberpunkColors.length)];
+            splash.style.boxShadow = `0 0 20px ${cyberpunkColors[Math.floor(Math.random() * cyberpunkColors.length)]}`;
+            
+            document.body.appendChild(splash);
+            
+            setTimeout(() => {
+                splash.remove();
+            }, 1000);
+        }
+
+        // Hover effects for interactive elements
+        const interactiveElements = document.querySelectorAll('a, button');
+        
+        interactiveElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(1.5)';
+                cursorFollower.style.transform = 'scale(1.2)';
+                cursor.style.background = '#ff0080';
+            });
+            
+            element.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+                cursorFollower.style.transform = 'scale(1)';
+                cursor.style.background = '#00ffff';
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 255, 255, 0.4)';
+            } else {
+                navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 255, 255, 0.2)';
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Typing effect for hero title
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Initialize typing effect after page load
+        setTimeout(() => {
+            const heroTitle = document.querySelector('.hero h1');
+            if (heroTitle) {
+                typeWriter(heroTitle, 'SHISHIR SRIVASTAV', 150);
+            }
+        }, 2500);
+
+        // Add glitch effect to logo
+        const logo = document.querySelector('.logo');
+        setInterval(() => {
+            if (Math.random() < 0.1) {
+                logo.style.animation = 'glitch 0.3s ease-in-out';
+                setTimeout(() => {
+                    logo.style.animation = '';
+                }, 300);
+            }
+        }, 3000);
+
+        // Add glitch animation CSS
+        const glitchStyle = document.createElement('style');
+        glitchStyle.textContent = `
+            @keyframes glitch {
+                0%, 100% { transform: translate(0); }
+                20% { transform: translate(-2px, 2px); }
+                40% { transform: translate(-2px, -2px); }
+                60% { transform: translate(2px, 2px); }
+                80% { transform: translate(2px, -2px); }
+            }
+        `;
+        document.head.appendChild(glitchStyle);
+
+        // Console messages
+        console.log('%c> SYSTEM INITIALIZED', 'color: #00ffff; font-family: monospace; font-size: 16px;');
+        console.log('%c> CYBERPUNK PORTFOLIO LOADED', 'color: #ff0080; font-family: monospace; font-size: 14px;');
+        console.log('%c> HINDI MATRIX RAIN ACTIVE', 'color: #00ff41; font-family: monospace; font-size: 14px;');
+        console.log('%c> ENHANCED COMPLETE VERSION', 'color: #ffff00; font-family: monospace; font-size: 14px;');
+    </script>
 </body>
 </html>
