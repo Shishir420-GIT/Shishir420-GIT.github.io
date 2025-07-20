@@ -635,6 +635,45 @@
             height: 100%;
         }
 
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background: var(--bg-tertiary);
+            border-bottom: 1px solid var(--border-neon);
+            margin: -2rem -2rem 1.5rem -2rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            filter: brightness(0.8) contrast(1.1);
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+            filter: brightness(1) contrast(1.2);
+        }
+
+        .project-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(0, 255, 255, 0.1), rgba(255, 0, 128, 0.1));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-card:hover .project-image::before {
+            opacity: 1;
+        }
+
         .project-date {
             color: var(--accent-neon);
             font-family: var(--font-primary);
@@ -1123,6 +1162,9 @@
             <h2 class="section-title">Featured Projects</h2>
             <div class="grid-2">
                 <div class="card project-card">
+                    <div class="project-image">
+                        <img src="assets/projects/cafe-home.png" alt="Manzil café - A Virtual Space" loading="lazy">
+                    </div>
                     <div class="project-date">July 2025</div>
                     <h3>Manzil café - A Virtual Space</h3>
                     <div class="project-description">
@@ -1142,6 +1184,9 @@
                 </div>
 
                 <div class="card project-card">
+                    <div class="project-image">
+                        <img src="assets/projects/automation-generator.png" alt="Automation Generator Tool" loading="lazy">
+                    </div>
                     <div class="project-date">July 2024</div>
                     <h3>Automation Generator Tool</h3>
                     <div class="project-description">
@@ -1161,6 +1206,9 @@
                 </div>
 
                 <div class="card project-card">
+                    <div class="project-image">
+                        <img src="assets/projects/crm-filler.png" alt="Automated Data filling into CRM Tool" loading="lazy">
+                    </div>
                     <div class="project-date">June 2025</div>
                     <h3>Automated Data filling into CRM Tool</h3>
                     <div class="project-description">
@@ -1181,6 +1229,9 @@
                 </div>
 
                 <div class="card project-card">
+                    <div class="project-image">
+                        <img src="assets/projects/mobile-research.png" alt="Gemini Based- Streamlined Mobile Devices Research" loading="lazy">
+                    </div>
                     <div class="project-date">Dec 2024</div>
                     <h3>Gemini Based- Streamlined Mobile Devices Research</h3>
                     <div class="project-description">
