@@ -1,20 +1,3 @@
 {
-    
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static-build",
-      "config": {
-        "outputDirectory": "."
-      }
-    }
-  ],
-
-  "buildCommand": "node inject-env.js",
-  "functions": {
-    "inject-env.js": {
-      "runtime": "nodejs18.x"
-    }
-  }
-
+  "buildCommand": "node inject-env.js"
 }
