@@ -2,21 +2,23 @@
 
 ## 🚀 Deployment Options
 
-### GitHub Pages (Static - Chatbot Disabled)
+### GitHub Pages & Vercel (Static - Secure)
 - **Security**: Chatbot automatically disabled (no API keys exposed)
-- **Setup**: Push to GitHub, enable Pages in repository settings
-- **URL**: `https://username.github.io/repository-name`
-
-### Vercel (Recommended - Full Features)
-- **Security**: API keys handled securely via environment variables
 - **Setup**: 
-  1. Connect GitHub repository to Vercel
-  2. Add environment variables in Vercel Dashboard
-  3. Deploy
+  - **GitHub Pages**: Push to GitHub, enable Pages in repository settings
+  - **Vercel**: Connect GitHub repository to Vercel and deploy
+- **URLs**: 
+  - GitHub Pages: `https://username.github.io/repository-name`
+  - Vercel: `https://your-project.vercel.app`
 
-## 🔑 Environment Variables (Vercel)
+### Local Development (Full Features)
+- **Security**: API keys handled securely via local environment variables
+- **Features**: Complete experience with AI chatbot
+- **Setup**: Use `.env` file for local development
 
-Add these in Vercel Dashboard → Project → Settings → Environment Variables:
+## 🔑 Environment Variables (Local Development)
+
+Create a `.env` file in the project root:
 
 ```
 GEMINI_API_KEY=your_gemini_api_key_here
