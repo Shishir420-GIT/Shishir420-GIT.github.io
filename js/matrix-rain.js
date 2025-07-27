@@ -27,32 +27,48 @@ export class MatrixRain {
         // Start animation
         this.animate();
         
-        // Handle resize
-        window.addEventListener('resize', () => this.resizeCanvas());
+        // Handle resize with throttling for performance
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                this.resizeCanvas();
+            }, 100);
+        });
         
         console.log('Matrix rain effect initialized');
     }
 
     resizeCanvas() {
+        // Ensure canvas covers the full viewport
         this.canvas.width = window.innerWidth;
         this.canvas.height = window.innerHeight;
         
-        // Recalculate columns
+        // Set CSS size to match canvas size for proper scaling
+        this.canvas.style.width = window.innerWidth + 'px';
+        this.canvas.style.height = window.innerHeight + 'px';
+        
+        // Recalculate columns for new width
         this.initColumns();
+        
+        console.log(`Canvas resized to: ${this.canvas.width} x ${this.canvas.height}`);
     }
 
     initColumns() {
         // Optimize for mobile performance - reduce columns on smaller screens
         const isMobile = window.innerWidth <= 768;
-        const adjustedFontSize = isMobile ? this.fontSize + 2 : this.fontSize; // Slightly larger on mobile
+        const adjustedFontSize = isMobile ? this.fontSize + 2 : this.fontSize;
         const numColumns = Math.floor(this.canvas.width / adjustedFontSize);
         
-        // Limit maximum columns for performance on mobile
-        const maxColumns = isMobile ? 40 : 100;
+        // Only limit columns on mobile for performance - desktop gets full coverage
+        const maxColumns = isMobile ? 40 : numColumns;
         const finalColumns = Math.min(numColumns, maxColumns);
         
-        this.columns = Array(finalColumns).fill(1);
+        // Initialize columns with random starting positions for better distribution
+        this.columns = Array(finalColumns).fill(0).map(() => Math.floor(Math.random() * 20) - 20);
         this.currentFontSize = adjustedFontSize;
+        
+        console.log(`Matrix: ${finalColumns} columns covering ${this.canvas.width}px width (font: ${adjustedFontSize}px)`);
     }
 
     animate = () => {
