@@ -125,26 +125,10 @@ export class ChatbotManager {
 
     // Get API key from environment variables or config
     getApiKey() {
-        // Check for Vercel environment variables (injected at build time)
-        if (typeof window !== 'undefined') {
-            // Vercel injects environment variables as window.ENV
-            if (window.ENV && (window.ENV.GEMINI_API_KEY || window.ENV.OPENAI_API_KEY)) {
-                return window.ENV.GEMINI_API_KEY || window.ENV.OPENAI_API_KEY;
-            }
-            
-            // Fallback: Check for direct window properties (less secure)
-            if (window.GEMINI_API_KEY || window.OPENAI_API_KEY) {
-                return window.GEMINI_API_KEY || window.OPENAI_API_KEY;
-            }
-        }
-        
-        // For local development with Node.js environment
-        if (typeof process !== 'undefined' && process.env) {
-            return process.env.GEMINI_API_KEY || process.env.OPENAI_API_KEY;
-        }
-        
-        // Security: No API key found - chatbot will be disabled
-        console.log('🔒 Security: No API key found. Chatbot disabled for security.');
+        // For security, chatbot is disabled on static deployments
+        // This prevents API key exposure in client-side code
+        console.log('🔒 Security: Chatbot disabled on static deployment for API key protection.');
+        console.log('💡 For full chatbot functionality, use server-side deployment or local development.');
         return null;
     }
     // Hide chatbot if no API key

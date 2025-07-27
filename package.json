@@ -1,16 +1,12 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Dynamic Portfolio with AI Chatbot",
+  "description": "Dynamic Portfolio with Cyberpunk Design",
   "main": "index.html",
   "scripts": {
-    "build": "node inject-env.js",
-    "dev": "echo 'Development mode - no build needed'",
-    "vercel-build": "node inject-env.js"
+    "dev": "echo 'Development mode - open index.html in browser'"
   },
-  "keywords": ["portfolio", "ai", "chatbot", "vercel"],
+  "keywords": ["portfolio", "cyberpunk", "static-site"],
   "author": "Shishir",
-  "license": "MIT",
-  "devDependencies": {},
-  "dependencies": {}
+  "license": "MIT"
 }

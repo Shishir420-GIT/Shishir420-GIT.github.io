@@ -1,3 +1,1 @@
-{
-  "buildCommand": "node inject-env.js"
-}
+{}
