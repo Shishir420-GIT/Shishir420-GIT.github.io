@@ -140,46 +140,101 @@ export class SectionManager {
 
     // Update projects section dynamically
     updateProjectsSection(config) {
-        const projectsSection = document.querySelector('.projects');
-        const titleElement = projectsSection.querySelector('h2');
+        const projectsSection = document.querySelector('.featured-projects');
+        if (!projectsSection) return;
         
+        const titleElement = projectsSection.querySelector('h2');
         if (titleElement) {
             titleElement.textContent = this.configManager.getSectionTitle('projects');
         }
         
+        // Get the featured projects grid container
+        const projectsGrid = document.querySelector('#featured-projects-grid');
+        if (!projectsGrid) return;
+        
         // Clear existing project items
-        const existingProjectItems = projectsSection.querySelectorAll('.project-item');
-        existingProjectItems.forEach(item => item.remove());
+        projectsGrid.innerHTML = '';
         
         // Create document fragment
         const fragment = document.createDocumentFragment();
         
         // Add all project items to fragment
         if (config.projects?.items?.length) {
-            config.projects.items.forEach(project => {
-                const projectItem = this.createProjectItem(project);
+            config.projects.items.slice(0, 6).forEach(project => { // Limit to 6 featured projects
+                const projectItem = this.createFeaturedProjectItem(project);
                 fragment.appendChild(projectItem);
             });
         } else {
             // Show placeholder for empty projects
             const emptyState = document.createElement('div');
-            emptyState.className = 'project-item';
+            emptyState.className = 'featured-project-card';
             emptyState.innerHTML = `
+                <div class="project-image">
+                    <i class="fas fa-plus" aria-hidden="true"></i>
+                </div>
                 <div class="project-content">
-                    <h3>Your Projects Will Appear Here</h3>
-                    <p class="date">Coming Soon</p>
-                    <ul>
-                        <li>Add your projects to the config.json file</li>
-                        <li>Include project descriptions and images</li>
-                        <li>Showcase your best work</li>
-                    </ul>
+                    <h3 class="project-title">Add Your Projects</h3>
+                    <p class="project-description">Include your projects in the config.json file to showcase your best work here.</p>
+                    <div class="project-links">
+                        <span class="project-btn" style="opacity: 0.6; cursor: not-allowed;">
+                            Coming Soon
+                        </span>
+                    </div>
                 </div>
             `;
             fragment.appendChild(emptyState);
         }
         
         // Append all projects at once for better performance
-        projectsSection.appendChild(fragment);
+        projectsGrid.appendChild(fragment);
+    }
+
+    // Create individual featured project item
+    createFeaturedProjectItem(project) {
+        const projectCard = document.createElement('div');
+        projectCard.className = 'featured-project-card';
+        
+        const descriptionText = Array.isArray(project.description) 
+            ? project.description.join(' ')
+            : project.description;
+        
+        // Create tech tags if available
+        const techTags = project.technologies ? 
+            project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('') : '';
+        
+        projectCard.innerHTML = `
+            <div class="project-image">
+                ${project.image || project.picture ? 
+                    `<img src="${project.image || project.picture}" alt="${project.name}" loading="lazy">` : 
+                    `<i class="fas fa-code" aria-hidden="true"></i>`
+                }
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">${project.name}</h3>
+                <p class="project-description">${descriptionText}</p>
+                ${techTags ? `<div class="project-tech">${techTags}</div>` : ''}
+                <div class="project-links">
+                    ${project.link ? `
+                        <a href="${typeof project.link === 'object' ? project.link.url : project.link}" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="project-btn"
+                           aria-label="View ${project.name} project">
+                            View Project
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                            </svg>
+                        </a>
+                    ` : `
+                        <span class="project-btn" style="opacity: 0.6; cursor: not-allowed;">
+                            Coming Soon
+                        </span>
+                    `}
+                </div>
+            </div>
+        `;
+        
+        return projectCard;
     }
 
     // Create individual project item

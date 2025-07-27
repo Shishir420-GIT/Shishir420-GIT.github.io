@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Dynamic Portfolio with AI Chatbot",
+  "main": "index.html",
+  "scripts": {
+    "build": "node inject-env.js",
+    "dev": "echo 'Development mode - no build needed'",
+    "vercel-build": "node inject-env.js"
+  },
+  "keywords": ["portfolio", "ai", "chatbot", "vercel"],
+  "author": "Shishir",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}

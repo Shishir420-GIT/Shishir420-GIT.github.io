@@ -15,11 +15,53 @@
     transition: var(--transition);
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* Improve touch target size for mobile */
+    min-width: 44px;
+    min-height: 44px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Mobile adjustments for theme switcher */
+@media (max-width: 768px) {
+    .theme-switch {
+        top: 0.8rem;
+        left: 0.8rem;
+        padding: 0.6rem;
+        min-width: 40px;
+        min-height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .theme-switch {
+        top: 0.6rem;
+        left: 0.6rem;
+        padding: 0.5rem;
+        min-width: 36px;
+        min-height: 36px;
+    }
+    
+    .theme-switch svg {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
 }
 
 .theme-switch:hover {
     transform: rotate(15deg);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Touch-friendly interactions for mobile */
+@media (pointer: coarse) {
+    .theme-switch:hover {
+        transform: none; /* Disable hover rotation on touch devices */
+    }
+    
+    .theme-switch:active {
+        transform: scale(0.95);
+        transition: transform 0.1s ease;
+    }
 }
 
 .theme-switch svg {

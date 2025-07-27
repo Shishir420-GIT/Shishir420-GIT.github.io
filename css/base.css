@@ -90,10 +90,66 @@ body {
     padding: clamp(1rem, 5vw, 3rem);
 }
 
+/* Mobile-first responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: clamp(0.8rem, 4vw, 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 98%;
+        padding: 1rem;
+    }
+}
+
 /* Section Styles */
 section {
     margin-bottom: 5rem;
     scroll-margin-top: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+/* Mobile section adjustments */
+@media (max-width: 768px) {
+    section {
+        margin-bottom: 3rem;
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.1) 0%, 
+        rgba(255, 255, 255, 0.05) 50%, 
+        rgba(255, 255, 255, 0.02) 100%);
+    border-radius: var(--border-radius);
+    pointer-events: none;
 }
 
 section h2 {
@@ -104,6 +160,7 @@ section h2 {
     font-weight: 700;
     position: relative;
     padding-bottom: 1rem;
+    z-index: 1;
 }
 
 section h2::after {
@@ -131,9 +188,48 @@ p {
     color: var(--text-muted);
 }
 
+/* Mobile typography adjustments */
+@media (max-width: 768px) {
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    h1 {
+        line-height: 1.1;
+    }
+    
+    h2 {
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
+    /* Improve mobile scrolling performance */
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile performance optimizations */
+@media (max-width: 768px) {
+    * {
+        /* Reduce animations on mobile for better performance */
+        animation-duration: 0.3s !important;
+        transition-duration: 0.3s !important;
+    }
+    
+    /* Optimize backdrop-filter for mobile */
+    section, header, .footer {
+        backdrop-filter: blur(5px);
+    }
 }
 
 /* Selection styles */

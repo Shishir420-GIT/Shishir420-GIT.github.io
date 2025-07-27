@@ -55,6 +55,9 @@
         <p class="loading-text">git init...</p>
     </div>
 
+    <!-- Matrix Rain Effect -->
+    <div class="matrix-rain" id="matrix-rain"></div>
+
     <!-- Theme switcher -->
     <button class="theme-switch" aria-label="Toggle dark/light theme">
         <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -84,8 +87,11 @@
             <div class="achievements-grid"></div>
         </section>
 
-        <section class="projects" aria-label="Latest projects">
-            <h2></h2>
+        <section class="featured-projects" aria-label="Featured projects">
+            <h2>Featured Projects</h2>
+            <div class="featured-projects-grid" id="featured-projects-grid">
+                <!-- Projects will be dynamically loaded -->
+            </div>
         </section>
         
         <section class="experience" aria-label="Professional experience">
@@ -195,6 +201,48 @@
             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
         </svg>
     </template>
+
+    <!-- AI Chatbot -->
+    <div id="chat-container" class="chat-container">
+        <!-- AI Cloud Hover -->
+        <div class="ai-cloud">
+            <div class="ai-cloud-text">Talk to me</div>
+        </div>
+        
+        <button id="chat-toggle" class="chat-toggle" aria-label="Toggle chat">
+            <svg class="chat-icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <svg class="chat-icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <div id="chat-widget" class="chat-widget" role="dialog" aria-labelledby="chat-heading">
+            <div class="chat-header">
+                <h3 id="chat-heading">AI ASSISTANT</h3>
+            </div>
+            <div id="chat-messages" class="chat-messages" role="log" aria-live="polite">
+                <div class="message bot">
+                    <div class="message-content">
+                        > SYSTEM INITIALIZED<br>
+                        > AI ASSISTANT ONLINE<br>
+                        > नमस्ते! I'm Shishir's AI assistant<br>
+                        > Ask me about skills, projects, or experience!
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" class="chat-input" placeholder="Enter command..." aria-label="Chat input">
+                <button id="chat-send" class="chat-send" aria-label="Send message">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
     
     <script type="module" src="js/main.js"></script>
 </body>
