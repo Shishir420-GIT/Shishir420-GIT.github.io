@@ -1,12 +1,21 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Dynamic Portfolio with Cyberpunk Design",
-  "main": "index.html",
+  "name": "shishir-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal brand landing page for Shishir Srivastav",
   "scripts": {
-    "dev": "echo 'Development mode - open index.html in browser'"
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
   },
-  "keywords": ["portfolio", "cyberpunk", "static-site"],
-  "author": "Shishir",
-  "license": "MIT"
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "@vitejs/plugin-react": "^5.0.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.5.0",
+    "vite": "^7.0.0"
+  }
 }

@@ -7,12 +7,35 @@
     "skills": true,
     "github_projects": true
   },
+  "hero": {
+    "headline": "Hi, Shishir this side.",
+    "philosophy": "If it is structured, it can be automated. If not, let AI handle it.",
+    "focus": [
+      "AI Security",
+      "Cloud Automation",
+      "RAG & Agents",
+      "Technical Teaching"
+    ]
+  },
+  "contact": {
+    "booking_url": "https://topmate.io/shishir_srivastav",
+    "email": "mailto:shishirsrivastavwho@gmail.com"
+  },
+  "youtube": {
+    "channel_id": "UCCZiCzPtg9pmDwChJ4ROIpA",
+    "channel_url": "https://www.youtube.com/channel/UCCZiCzPtg9pmDwChJ4ROIpA?sub_confirmation=1",
+    "mode": "latest_uploads_playlist"
+  },
+  "writing": {
+    "hashnode_host": "shishirsrivastav.hashnode.dev",
+    "hashnode_url": "https://shishirsrivastav.hashnode.dev"
+  },
   "site": {
     "title": "Shishir Srivastav - AI/ML Engineer & Tech Content Creator",
-    "description": "Senior Python Developer with almost 5 years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?",
+    "description": "Senior Python Developer with 5+ years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?",
     "seo": {
       "title": "Shishir Srivastav - AI/ML Engineer & Tech Content Creator",
-      "description": "Senior Python Developer with almost 5 years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?",
+      "description": "Senior Python Developer with 5+ years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?",
       "keywords": "Python, AI, ML, Multi Cloud - AWS • GCP • Azure • OCI, Expertise in Generative AI, Automation, Scripting, DevOps, Designing, Troubleshooting, software engineer",
       "author": "Shishir Srivastav",
       "og_image": "https://avatars.githubusercontent.com/Shishir420-GIT",
@@ -154,12 +177,13 @@
         "description": [
           "A virtual social café platform with multi-tenant café spaces, real-time chat, AI bartender integration, voice messaging, virtual ordering, and enterprise-grade security. Experience the future of social interaction in beautifully themed virtual environments.",
           "Features: ",
-          "Chat rooms.",
-          "AI assistant/companion.",
-          "Pomodoro Focus room",
-          "Google Auth"
+          "• Chat rooms",
+          "• AI assistant/companion",
+          "• Pomodoro Focus room",
+          "• Google Auth"
         ],
         "picture": "assets/projects/cafe-home.png",
+        "tech_stack": ["React", "Node.js", "MongoDB", "Socket.io", "OpenAI", "Google Auth"],
         "link": {
           "url": "https://github.com/Shishir420-GIT/manzilcafe",
           "title": "View Project"
@@ -169,14 +193,15 @@
         "name": "Automation Generator Tool",
         "date": "July 2024",
         "description": [
-          "This application allows users to upload an SOP based pdf, which lets them create an Automation around it, by providing a block daigram (text based), a script and list of pre-requisites to run the script, The AI being utilized here is Gemini-pro.",
-          "Features: ",
-          "Queries MongoDB for existing solutions.",
-          "Upload SOP based PDF & Summarising of the PDF.",
-          "AI-powered script, flow and pre-requisite generation.",
-          "Option to regenerate review code and regenerate it."
+          "This application allows users to upload an SOP based pdf, which lets them create an Automation around it, by providing a block diagram (text based), a script and list of pre-requisites to run the script, The AI being utilized here is Gemini-pro.",
+          "Features:",
+          "• Queries MongoDB for existing solutions",
+          "• Upload SOP based PDF & Summarising of the PDF",
+          "• AI-powered script, flow and pre-requisite generation",
+          "• Option to regenerate review code and regenerate it"
         ],
         "picture": "assets/projects/automation-generator.png",
+        "tech_stack": ["Python", "Streamlit", "MongoDB", "Gemini AI", "PyPDF2"],
         "link": {
           "url": "https://github.com/Shishir420-GIT/Automation-Generator",
           "title": "View Project"
@@ -187,14 +212,15 @@
         "date": "June 2025",
         "description": [
           "A modern full-stack application that uses AI to extract contact, company, and deal information from meeting summaries. Built with React frontend and FastAPI backend.",
-          "Features: ",
-          "AI-Powered Extraction: Uses OpenAI GPT models to extract structured CRM data",
-          "PII Detection: Identifies and extracts personally identifiable information",
-          "Data Persistence: MongoDB Atlas integration for storing leads",
-          "Export Capabilities: Download data as CSV or JSON",
-          "Dashboard Analytics: View statistics and insights"
+          "Features:",
+          "• AI-Powered Extraction: Uses OpenAI GPT models to extract structured CRM data",
+          "• PII Detection: Identifies and extracts personally identifiable information",
+          "• Data Persistence: MongoDB Atlas integration for storing leads",
+          "• Export Capabilities: Download data as CSV or JSON",
+          "• Dashboard Analytics: View statistics and insights"
         ],
         "picture": "assets/projects/crm-filler.png",
+        "tech_stack": ["React", "FastAPI", "MongoDB", "OpenAI GPT", "Python"],
         "link": {
           "url": "https://github.com/Shishir420-GIT/Automated-Data-Filler-Agent",
           "title": "View Project"
@@ -205,13 +231,14 @@
         "date": "Dec 2024",
         "description": [
           "This application uses Streamlit to compare YouTube videos by fetching transcripts, summarizing content, and generating comparison tables. It leverages Google's Gemini AI for content generation.",
-          "Features: ",
-          "Extract transcripts from YouTube videos.",
-          "Summarize video content using Gemini AI.",
-          "Generate comparison tables in HTML, CSV, and PDF formats.",
-          "Download comparison results."
+          "Features:",
+          "• Extract transcripts from YouTube videos",
+          "• Summarize video content using Gemini AI",
+          "• Generate comparison tables in HTML, CSV, and PDF formats",
+          "• Download comparison results"
         ],
         "picture": "assets/projects/mobile-research.png",
+        "tech_stack": ["Python", "Streamlit", "Gemini AI", "YouTube API", "Pandas"],
         "link": {
           "url": "https://github.com/Shishir420-GIT/BnB-Hack-A-Thon",
           "title": "View Project"
@@ -223,9 +250,19 @@
     "title": "Professional Experience",
     "jobs": [
       {
+        "company": "Tiger Analytics",
+        "role": "AI Engineer",
+        "date": "June 2026 - Present",
+        "responsibilities": [
+          "Building production-focused AI and analytics systems with an emphasis on secure, reliable automation.",
+          "Working across data, cloud, and applied AI workflows to move structured business problems into repeatable systems.",
+          "Translating ambiguous requirements into practical AI-assisted delivery patterns for enterprise teams."
+        ]
+      },
+      {
         "company": "EY GDS",
         "role": "Senior Technology Consultant II",
-        "date": "December 2024 - Present",
+        "date": "December 2024 - May 2026",
         "responsibilities": [
           "Developed a Cyber AI Package to detect PII, prompt injection, and jailbreak attempts using a combination of Microsoft Presidio, custom ML models with 97% accuracy, and pattern-based logic.",
           "Designed solution architecture for a Policy Assessment Engine that utilizes OpenAI APIs to evaluate compliance narratives and automate risk scoring planned to reduce human effort by 50%.",
