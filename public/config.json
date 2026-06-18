@@ -9,33 +9,86 @@
   },
   "hero": {
     "headline": "Hi, Shishir this side.",
-    "philosophy": "If it is structured, it can be automated. If not, let AI handle it.",
+    "philosophy": "If it is structured, it can be automated. If not, let's make AI handle it.",
     "focus": [
       "AI Security",
       "Cloud Automation",
       "RAG & Agents",
-      "Technical Teaching"
+      "Solving Complex Problems",
+      "Tech Content Creation",
+      "Mentorship & Guidance"
     ]
   },
   "contact": {
     "booking_url": "https://topmate.io/shishir_srivastav",
-    "email": "mailto:shishirsrivastavwho@gmail.com"
+    "email": "mailto:shishir.workemail@gmail.com"
   },
   "youtube": {
     "channel_id": "UCCZiCzPtg9pmDwChJ4ROIpA",
-    "channel_url": "https://www.youtube.com/channel/UCCZiCzPtg9pmDwChJ4ROIpA?sub_confirmation=1",
-    "mode": "latest_uploads_playlist"
+    "channel_url": "https://www.youtube.com/@shishir_who?sub_confirmation=1",
+    "featured_video_id": "wmJ6jEMZdPI",
+    "featured_video_title": "Build Your 1st AI Agent Locally: ADK + Gemini 3 - Part 1",
+    "suggested_videos": [
+      {
+        "video_id": "rY3iSPx3ICE",
+        "title": "My re:Invent Story (Visa Process, Application Tips)"
+      },
+      {
+        "video_id": "vuywYUeb1LI",
+        "title": "Modernize your GitHub profile in Minutes"
+      },
+      {
+        "video_id": "9xE2DTxGvTY",
+        "title": "Gemini-CLI Masterclass | The Only Guide You Need | Gemini 2025"
+      },
+      {
+        "video_id": "0cuZ3DaK0_0",
+        "title": "FREE OCI Certification 2025| How to Get FREE Oracle Certifications (Step-by-Step)"
+      }
+    ]
   },
   "writing": {
     "hashnode_host": "shishirsrivastav.hashnode.dev",
-    "hashnode_url": "https://shishirsrivastav.hashnode.dev"
+    "hashnode_url": "https://shishirsrivastav.hashnode.dev",
+    "posts": [
+      {
+        "title": "Understanding AI Agents vs. Agentic AI",
+        "url": "https://shishirsrivastav.hashnode.dev/understanding-ai-agents-vs-agentic-ai",
+        "date": "Jun 23, 2025",
+        "readTime": "4 min read"
+      },
+      {
+        "title": "Going Deeper into Function Calling Vs Agentic AI.",
+        "url": "https://shishirsrivastav.hashnode.dev/going-deeper-into-function-calling-vs-agentic-ai",
+        "date": "May 30, 2025",
+        "readTime": "5 min read"
+      },
+      {
+        "title": "Local RAG with Ollama and DeepSeek",
+        "url": "https://shishirsrivastav.hashnode.dev/local-rag-with-ollama-and-deepseek",
+        "date": "Jun 22, 2025",
+        "readTime": "5 min read"
+      },
+      {
+        "title": "Function Calling Vs Agentic AI",
+        "url": "https://shishirsrivastav.hashnode.dev/function-calling-vs-agentic-ai",
+        "date": "May 30, 2025",
+        "readTime": "4 min read"
+      },
+      {
+        "title": "Interviews are Hard, but you got this",
+        "url": "https://shishirsrivastav.hashnode.dev/interviews-are-hard-but-you-got-this",
+        "date": "May 25, 2026",
+        "readTime": "7 min read"
+      }
+    ]
   },
   "site": {
     "title": "Shishir Srivastav - AI/ML Engineer & Tech Content Creator",
-    "description": "Senior Python Developer with 5+ years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?",
+    "description": " a Senior Python Developer with 5+ years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?",
     "seo": {
       "title": "Shishir Srivastav - AI/ML Engineer & Tech Content Creator",
-      "description": "Senior Python Developer with 5+ years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?",
+      "description": " a Senior Python Developer with 5+ years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?",
       "keywords": "Python, AI, ML, Multi Cloud - AWS • GCP • Azure • OCI, Expertise in Generative AI, Automation, Scripting, DevOps, Designing, Troubleshooting, software engineer",
       "author": "Shishir Srivastav",
       "og_image": "https://avatars.githubusercontent.com/Shishir420-GIT",
@@ -94,7 +147,7 @@
   "github_username": "Shishir420-GIT",
   "about": {
     "paragraphs": [
-      "👋 Welcome! I'm Senior Developer with almost 5 years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. My keen interest in Generative AI and its capabilities has allowed me to build and even win prizes by building and presenting Generative AI-based applications in various places. So let me ask you, what are we going to build next?"
+      "👋 Welcome! I'm Senior Developer with 5+ years of experience, I simplify complex tasks and believe that ‘if it is structured, it can be automated’. Over the past couple of years, I've been building and presenting Generative AI-based applications at workshops and seminars. So let me ask you this, 'what are we going to build next?'"
     ]
   },
   "achievements": {
@@ -182,7 +235,7 @@
           "• Pomodoro Focus room",
           "• Google Auth"
         ],
-        "picture": "assets/projects/cafe-home.png",
+        "picture": "assets/images/projects/cafe-home.png",
         "tech_stack": ["React", "Node.js", "MongoDB", "Socket.io", "OpenAI", "Google Auth"],
         "link": {
           "url": "https://github.com/Shishir420-GIT/manzilcafe",
@@ -200,7 +253,7 @@
           "• AI-powered script, flow and pre-requisite generation",
           "• Option to regenerate review code and regenerate it"
         ],
-        "picture": "assets/projects/automation-generator.png",
+        "picture": "assets/images/projects/automation-generator.png",
         "tech_stack": ["Python", "Streamlit", "MongoDB", "Gemini AI", "PyPDF2"],
         "link": {
           "url": "https://github.com/Shishir420-GIT/Automation-Generator",
@@ -219,7 +272,7 @@
           "• Export Capabilities: Download data as CSV or JSON",
           "• Dashboard Analytics: View statistics and insights"
         ],
-        "picture": "assets/projects/crm-filler.png",
+        "picture": "assets/images/projects/crm-filler.png",
         "tech_stack": ["React", "FastAPI", "MongoDB", "OpenAI GPT", "Python"],
         "link": {
           "url": "https://github.com/Shishir420-GIT/Automated-Data-Filler-Agent",
@@ -237,7 +290,7 @@
           "• Generate comparison tables in HTML, CSV, and PDF formats",
           "• Download comparison results"
         ],
-        "picture": "assets/projects/mobile-research.png",
+        "picture": "assets/images/projects/mobile-research.png",
         "tech_stack": ["Python", "Streamlit", "Gemini AI", "YouTube API", "Pandas"],
         "link": {
           "url": "https://github.com/Shishir420-GIT/BnB-Hack-A-Thon",
@@ -257,7 +310,9 @@
           "Building production-focused AI and analytics systems with an emphasis on secure, reliable automation.",
           "Working across data, cloud, and applied AI workflows to move structured business problems into repeatable systems.",
           "Translating ambiguous requirements into practical AI-assisted delivery patterns for enterprise teams."
-        ]
+        ],
+        "logo": "assets/logos/Tiger-logo.png",
+        "logo_dark": "assets/logos/Tiger-logo.png"
       },
       {
         "company": "EY GDS",
@@ -428,7 +483,7 @@
   "footer": {
     "show_social_links": true,
     "show_built_with": true,
-    "built_with_text": "Built with ❤️ using vanilla JavaScript • Open Source",
+    "built_with_text": "Built with ❤️ . Open Source",
     "tagline": "Let's connect and build something amazing together! 🚀"
   }
 }

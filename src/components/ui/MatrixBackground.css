@@ -1,0 +1,24 @@
+.matrix-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: var(--z-background);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Reduce intensity on mobile for performance */
+@media (max-width: 768px) {
+  .matrix-background {
+    opacity: 0.2;
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .matrix-background {
+    display: none;
+  }
+}

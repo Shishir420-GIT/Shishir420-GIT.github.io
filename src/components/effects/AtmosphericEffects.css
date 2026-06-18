@@ -1,0 +1,106 @@
+/* Atmospheric Effects - Reusable */
+.atmospheric-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.atmos-light-rays {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 20%,
+    rgba(91, 159, 216, 0.08) 0%,
+    rgba(109, 213, 237, 0.05) 40%,
+    transparent 70%
+  );
+}
+
+.atmos-mist-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.03) 0%, transparent 100%);
+  animation: atmos-mist-drift 20s ease-in-out infinite;
+}
+
+@keyframes atmos-mist-drift {
+  0%, 100% { opacity: 0.3; transform: translateX(0); }
+  50% { opacity: 0.6; transform: translateX(20px); }
+}
+
+/* Floating Leaves */
+.atmos-leaves-floating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.atmos-leaf {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(109, 213, 237, 0.2);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation: atmos-leaf-fall 12s linear infinite;
+  box-shadow: 0 0 10px rgba(109, 213, 237, 0.3);
+}
+
+@keyframes atmos-leaf-fall {
+  0% {
+    transform: translateY(-10%) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Fireflies */
+.atmos-fireflies {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.atmos-firefly {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: var(--color-accent-cyan);
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px var(--color-accent-cyan);
+  animation: atmos-firefly-glow 3s ease-in-out infinite;
+}
+
+@keyframes atmos-firefly-glow {
+  0%, 100% {
+    opacity: 0.2;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(10px, -10px);
+  }
+}

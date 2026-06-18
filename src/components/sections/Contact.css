@@ -1,0 +1,190 @@
+.contact-section {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  background: var(--color-bg-primary);
+}
+
+.contact-container {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-width-md);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-3xl);
+}
+
+.section-title {
+  font-size: var(--font-size-6xl);
+  font-weight: var(--font-weight-black);
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  line-height: var(--line-height-relaxed);
+}
+
+/* Primary CTA */
+.contact-primary-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-xl) var(--spacing-3xl);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  background: linear-gradient(
+    135deg,
+    var(--color-accent-blue) 0%,
+    var(--color-accent-purple) 100%
+  );
+  border-radius: var(--radius-xl);
+  text-decoration: none;
+  box-shadow: var(--shadow-xl);
+  transition: all var(--duration-normal) var(--easing-out);
+  border: none;
+}
+
+.contact-primary-cta:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(91, 159, 216, 0.4);
+}
+
+/* Email */
+.contact-method {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.contact-label {
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-tertiary);
+  font-weight: var(--font-weight-medium);
+}
+
+.contact-email {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent-blue);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--easing-out);
+}
+
+.contact-email:hover {
+  color: var(--color-accent-cyan);
+}
+
+/* Social Links */
+.social-links-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  width: 100%;
+}
+
+.social-label {
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-tertiary);
+  font-weight: var(--font-weight-medium);
+}
+
+.social-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-md);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-lg);
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: all var(--duration-normal) var(--easing-out);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.social-link:hover {
+  background: var(--color-bg-tertiary);
+  border-color: var(--color-accent-blue);
+  color: var(--color-accent-blue);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.social-link svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+  overflow: hidden;
+  position: relative;
+    padding: var(--spacing-3xl) var(--spacing-md);
+  }
+
+  .contact-container {
+  position: relative;
+  z-index: 1;
+    gap: var(--spacing-2xl);
+  }
+
+  .section-title {
+    font-size: var(--font-size-5xl);
+  }
+
+  .contact-subtitle {
+    font-size: var(--font-size-lg);
+  }
+
+  .contact-primary-cta {
+    width: 100%;
+    justify-content: center;
+    padding: var(--spacing-lg) var(--spacing-2xl);
+    font-size: var(--font-size-lg);
+  }
+
+  .contact-email {
+    font-size: var(--font-size-xl);
+    word-break: break-all;
+  }
+
+  .social-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+  }
+
+  .social-link {
+    padding: var(--spacing-md);
+  }
+
+  .social-link svg {
+    width: 24px;
+    height: 24px;
+  }
+}

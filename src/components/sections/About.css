@@ -1,0 +1,191 @@
+.about-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  background: var(--color-bg-secondary);
+  overflow: hidden;
+}
+
+.about-container {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-width-lg);
+  width: 100%;
+}
+
+.section-title {
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  margin-bottom: var(--spacing-4xl);
+  color: var(--color-text-primary);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3xl);
+  margin-bottom: var(--spacing-4xl);
+}
+
+.about-block {
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-2xl);
+  transition: border-color var(--duration-fast) var(--easing-out);
+}
+
+.about-block:hover {
+  border-color: var(--color-border-hover);
+}
+
+.about-subtitle {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent-blue);
+  margin-bottom: var(--spacing-lg);
+}
+
+.about-text {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.about-text:last-child {
+  margin-bottom: 0;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.focus-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+}
+
+.focus-bullet {
+  color: var(--color-accent-cyan);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);
+}
+
+.philosophy-block {
+  background: linear-gradient(
+    135deg,
+    rgba(91, 159, 216, 0.05) 0%,
+    rgba(157, 123, 216, 0.05) 100%
+  );
+  border-color: var(--color-accent-blue);
+}
+
+.philosophy-text {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+  font-family: var(--font-mono);
+  font-style: italic;
+}
+
+/* CTA Buttons */
+.about-cta-container {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  transition: all var(--duration-normal) var(--easing-out);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.cta-primary {
+  background: var(--color-accent-blue);
+  color: var(--color-white);
+  box-shadow: var(--shadow-md);
+}
+
+.cta-primary:hover {
+  background: var(--color-accent-cyan);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-2px);
+}
+
+.cta-secondary {
+  background: transparent;
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.cta-secondary:hover {
+  border-color: var(--color-accent-blue);
+  color: var(--color-accent-blue);
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    padding: var(--spacing-3xl) var(--spacing-md);
+  }
+
+  .section-title {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-3xl);
+  }
+
+  .about-content {
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-3xl);
+  }
+
+  .about-block {
+    padding: var(--spacing-xl);
+  }
+
+  .about-subtitle {
+    font-size: var(--font-size-xl);
+  }
+
+  .about-text,
+  .philosophy-text {
+    font-size: var(--font-size-base);
+  }
+
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-cta-container {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: var(--font-size-base);
+  }
+}
